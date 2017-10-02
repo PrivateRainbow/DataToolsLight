@@ -1,0 +1,144 @@
+2017-08-18 14:23:31,798  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 14:23:35,229  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 14:23:42,365  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 14:23:46,804  ERROR 1  DataToolsLightLogger - ConnectToServerAsync
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Loader.Helpers.ConnectionTester.<VerifyConnectionAsync>d__2.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\Tester\ConnectionTester.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DataLightViewer.ViewModels.ExplorerViewModel.<ConnectToServerAsync>d__40.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\ViewModels\ExplorerViewModel.cs:line 176
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2017-08-18 14:23:46,840  ERROR 1  DataToolsLightLogger - ConnectToServerAsync
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Loader.Helpers.ConnectionTester.<VerifyConnectionAsync>d__2.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\Tester\ConnectionTester.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DataLightViewer.ViewModels.ExplorerViewModel.<ConnectToServerAsync>d__40.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\ViewModels\ExplorerViewModel.cs:line 176
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2017-08-18 14:23:46,879  ERROR 1  DataToolsLightLogger - ConnectToServerAsync
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Loader.Helpers.ConnectionTester.<VerifyConnectionAsync>d__2.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\Tester\ConnectionTester.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DataLightViewer.ViewModels.ExplorerViewModel.<ConnectToServerAsync>d__40.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\ViewModels\ExplorerViewModel.cs:line 176
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2017-08-18 14:24:41,623  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 14:24:42,060  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 14:26:20,526  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 14:26:20,702  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 15:38:03,852  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 15:38:04,091  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 15:41:02,381  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 15:41:02,594  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 15:44:03,270  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 15:44:03,498  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 15:44:55,621  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 15:44:55,870  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 15:49:30,793  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 15:49:31,013  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 15:54:41,829  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 15:54:42,039  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 16:22:01,134  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 16:22:01,379  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 16:23:26,948  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 16:23:27,344  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 16:25:00,724  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 16:25:01,169  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 16:28:39,208  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 16:28:39,439  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 18:14:38,197  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:14:38,402  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 18:15:47,563  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:27:56,980  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:28:36,691  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:30:22,389  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:34:25,284  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:37:05,927  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:38:59,130  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:39:49,594  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:40:45,646  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:42:51,095  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:47:16,271  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:48:01,444  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:49:19,454  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:51:54,414  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:52:43,450  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 18:54:46,083  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 18:55:01,562  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:02:41,846  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:04:23,381  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:04:23,557  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:05:09,176  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:07:27,632  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:07:49,979  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:08:24,265  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:11:32,780  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:12:33,114  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:13:06,032  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:13:23,992  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:14:10,312  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:18:03,880  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:18:04,136  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:21:24,305  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:21:24,519  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:22:34,602  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:22:34,796  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:50:52,803  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:51:31,112  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:51:49,422  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:52:42,922  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:52:43,113  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:53:35,148  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:53:35,339  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:54:07,701  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:54:07,940  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:56:26,289  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:56:26,489  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:57:54,806  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:57:55,043  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 19:59:44,156  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 19:59:44,367  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 20:11:31,457  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 20:11:31,626  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 20:12:26,387  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 20:12:26,547  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 20:13:21,100  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 20:13:21,251  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 20:20:12,559  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 20:20:12,701  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 20:21:21,035  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 20:21:21,187  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-18 20:22:47,979  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-18 20:22:48,137  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!

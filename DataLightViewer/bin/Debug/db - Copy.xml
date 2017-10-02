@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NORTHWND>
+  <views>
+    <view name="Customer and Suppliers by City" object_id="485576768" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:09 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Customer and Suppliers by City" AS
+SELECT City, CompanyName, ContactName, 'Customers' AS Relationship 
+FROM Customers
+UNION SELECT City, CompanyName, ContactName, 'Suppliers'
+FROM Suppliers
+--ORDER BY City, CompanyName
+</view-value>
+      <columns>
+        <column name="City" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="CompanyName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="ContactName" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="60" />
+        <column name="Relationship" type="varchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="9" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Alphabetical list of products" object_id="501576825" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Alphabetical list of products" AS
+SELECT Products.*, Categories.CategoryName
+FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID
+WHERE (((Products.Discontinued)=0))
+</view-value>
+      <columns>
+        <column name="ProductID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="SupplierID" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="CategoryID" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="QuantityPerUnit" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="40" />
+        <column name="UnitPrice" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="UnitsInStock" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="UnitsOnOrder" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="ReorderLevel" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="Discontinued" type="bit" precision="1" scale="0" is_nullable="False" is_identity="False" maxLength="1" />
+        <column name="CategoryName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="30" />
+      </columns>
+      <indexes />
+    </view>
+  </views>
+</NORTHWND>

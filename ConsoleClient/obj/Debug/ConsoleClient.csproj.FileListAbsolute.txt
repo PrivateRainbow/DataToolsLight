@@ -1,0 +1,8 @@
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\ConsoleClient\bin\Debug\ConsoleClient.exe.config
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\ConsoleClient\bin\Debug\ConsoleClient.exe
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\ConsoleClient\bin\Debug\ConsoleClient.pdb
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\ConsoleClient\bin\Debug\Loader.dll
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\ConsoleClient\bin\Debug\Loader.pdb
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\ConsoleClient\obj\Debug\ConsoleClient.exe
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\ConsoleClient\obj\Debug\ConsoleClient.pdb

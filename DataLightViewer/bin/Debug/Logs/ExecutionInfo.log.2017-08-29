@@ -1,0 +1,12 @@
+2017-08-29 12:35:22,082  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-29 12:35:22,267  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-29 12:35:23,331  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-29 12:35:23,651  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-08-29 12:35:28,401  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-29 12:35:28,408  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-08-29 12:35:29,010  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-29 12:35:31,994  INFO 6  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-29 12:35:34,329  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-29 12:35:34,336  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-08-29 12:35:35,097  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-29 12:35:35,151  INFO 11  DataToolsLightLogger - Data for Columns was downloaded

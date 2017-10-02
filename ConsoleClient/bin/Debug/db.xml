@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NORTHWND>
+  <tables>
+    <table schemaName="dbo" tableName="Orders" object_id="21575115" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM">
+      <columns>
+        <column name="OrderID" type="int" precision="10" scale="0" is_nullable="False" is_identity="True" maxLength="4" />
+        <column name="CustomerID" type="nchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="10" />
+        <column name="EmployeeID" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="OrderDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="RequiredDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="ShippedDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="ShipVia" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="Freight" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="ShipName" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="80" />
+        <column name="ShipAddress" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="120" />
+        <column name="ShipCity" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="ShipRegion" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="ShipPostalCode" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="20" />
+        <column name="ShipCountry" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+      </columns>
+      <keys>
+        <key name="PK_Orders" type="PK" type_desc="CLUSTERED" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" isDescendingKey="False" columnName="OrderID" />
+        <key name="FK_Orders_Customers" type="F " parentTable="Orders" parentColumn="CustomerID" referentialTable="Customers" referentialColumn="CustomerID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+        <key name="FK_Orders_Employees" type="F " parentTable="Orders" parentColumn="EmployeeID" referentialTable="Employees" referentialColumn="EmployeeID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+        <key name="FK_Orders_Shippers" type="F " parentTable="Orders" parentColumn="ShipVia" referentialTable="Shippers" referentialColumn="ShipperID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+      </keys>
+      <constraints>
+        <constraint definition="(0)" name="DF_Orders_Freight" columnName="Freight" type="D " type_desc="DEFAULT_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+      </constraints>
+      <indexes>
+        <index name="PK_Orders" columnName="OrderID" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="CustomerID" columnName="CustomerID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="CustomersOrders" columnName="CustomerID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="EmployeeID" columnName="EmployeeID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="EmployeesOrders" columnName="EmployeeID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="OrderDate" columnName="OrderDate" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="ShippedDate" columnName="ShippedDate" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="ShippersOrders" columnName="ShipVia" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="ShipPostalCode" columnName="ShipPostalCode" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="Products" object_id="117575457" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM">
+      <columns>
+        <column name="ProductID" type="int" precision="10" scale="0" is_nullable="False" is_identity="True" maxLength="4" />
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="SupplierID" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="CategoryID" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="QuantityPerUnit" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="40" />
+        <column name="UnitPrice" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="UnitsInStock" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="UnitsOnOrder" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="ReorderLevel" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="Discontinued" type="bit" precision="1" scale="0" is_nullable="False" is_identity="False" maxLength="1" />
+      </columns>
+      <keys>
+        <key name="PK_Products" type="PK" type_desc="CLUSTERED" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" isDescendingKey="False" columnName="ProductID" />
+        <key name="FK_Products_Suppliers" type="F " parentTable="Products" parentColumn="SupplierID" referentialTable="Suppliers" referentialColumn="SupplierID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+        <key name="FK_Products_Categories" type="F " parentTable="Products" parentColumn="CategoryID" referentialTable="Categories" referentialColumn="CategoryID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+      </keys>
+      <constraints>
+        <constraint definition="(0)" name="DF_Products_UnitPrice" columnName="UnitPrice" type="D " type_desc="DEFAULT_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="(0)" name="DF_Products_UnitsInStock" columnName="UnitsInStock" type="D " type_desc="DEFAULT_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="(0)" name="DF_Products_UnitsOnOrder" columnName="UnitsOnOrder" type="D " type_desc="DEFAULT_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="(0)" name="DF_Products_ReorderLevel" columnName="ReorderLevel" type="D " type_desc="DEFAULT_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="(0)" name="DF_Products_Discontinued" columnName="Discontinued" type="D " type_desc="DEFAULT_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="([UnitPrice] &gt;= 0)" name="CK_Products_UnitPrice" columnName="UnitPrice" type="C " type_desc="CHECK_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="([ReorderLevel] &gt;= 0)" name="CK_ReorderLevel" columnName="ReorderLevel" type="C " type_desc="CHECK_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="([UnitsInStock] &gt;= 0)" name="CK_UnitsInStock" columnName="UnitsInStock" type="C " type_desc="CHECK_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="([UnitsOnOrder] &gt;= 0)" name="CK_UnitsOnOrder" columnName="UnitsOnOrder" type="C " type_desc="CHECK_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+      </constraints>
+      <indexes>
+        <index name="PK_Products" columnName="ProductID" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="CategoriesProducts" columnName="CategoryID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="CategoryID" columnName="CategoryID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="ProductName" columnName="ProductName" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="SupplierID" columnName="SupplierID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="SuppliersProducts" columnName="SupplierID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="Order Details" object_id="325576198" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM">
+      <columns>
+        <column name="OrderID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="ProductID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="UnitPrice" type="money" precision="19" scale="4" is_nullable="False" is_identity="False" maxLength="8" />
+        <column name="Quantity" type="smallint" precision="5" scale="0" is_nullable="False" is_identity="False" maxLength="2" />
+        <column name="Discount" type="real" precision="24" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+      </columns>
+      <keys>
+        <key name="PK_Order_Details" type="PK" type_desc="CLUSTERED" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" isDescendingKey="False" columnName="OrderID" />
+        <key name="PK_Order_Details" type="PK" type_desc="CLUSTERED" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" isDescendingKey="False" columnName="ProductID" />
+        <key name="FK_Order_Details_Orders" type="F " parentTable="Order Details" parentColumn="OrderID" referentialTable="Orders" referentialColumn="OrderID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+        <key name="FK_Order_Details_Products" type="F " parentTable="Order Details" parentColumn="ProductID" referentialTable="Products" referentialColumn="ProductID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+      </keys>
+      <constraints>
+        <constraint definition="(0)" name="DF_Order_Details_UnitPrice" columnName="UnitPrice" type="D " type_desc="DEFAULT_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="(1)" name="DF_Order_Details_Quantity" columnName="Quantity" type="D " type_desc="DEFAULT_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="(0)" name="DF_Order_Details_Discount" columnName="Discount" type="D " type_desc="DEFAULT_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="([Discount] &gt;= 0 and [Discount] &lt;= 1)" name="CK_Discount" columnName="Discount" type="C " type_desc="CHECK_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="([Quantity] &gt; 0)" name="CK_Quantity" columnName="Quantity" type="C " type_desc="CHECK_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+        <constraint definition="([UnitPrice] &gt;= 0)" name="CK_UnitPrice" columnName="UnitPrice" type="C " type_desc="CHECK_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+      </constraints>
+      <indexes>
+        <index name="PK_Order_Details" columnName="OrderID" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="PK_Order_Details" columnName="ProductID" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="OrderID" columnName="OrderID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="OrdersOrder_Details" columnName="OrderID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="ProductID" columnName="ProductID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="ProductsOrder_Details" columnName="ProductID" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="CustomerCustomerDemo" object_id="853578079" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:16 PM" modify_date="12/13/2004 4:11:16 PM">
+      <columns>
+        <column name="CustomerID" type="nchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="10" />
+        <column name="CustomerTypeID" type="nchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="20" />
+      </columns>
+      <keys>
+        <key name="PK_CustomerCustomerDemo" type="PK" type_desc="NONCLUSTERED" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM" isDescendingKey="False" columnName="CustomerID" />
+        <key name="PK_CustomerCustomerDemo" type="PK" type_desc="NONCLUSTERED" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM" isDescendingKey="False" columnName="CustomerTypeID" />
+        <key name="FK_CustomerCustomerDemo_Customers" type="F " parentTable="CustomerCustomerDemo" parentColumn="CustomerID" referentialTable="Customers" referentialColumn="CustomerID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+        <key name="FK_CustomerCustomerDemo" type="F " parentTable="CustomerCustomerDemo" parentColumn="CustomerTypeID" referentialTable="CustomerDemographics" referentialColumn="CustomerTypeID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+      </keys>
+      <constraints />
+      <indexes>
+        <index name="PK_CustomerCustomerDemo" columnName="CustomerID" type_desc="NONCLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="PK_CustomerCustomerDemo" columnName="CustomerTypeID" type_desc="NONCLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="CustomerDemographics" object_id="869578136" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:16 PM" modify_date="12/13/2004 4:11:16 PM">
+      <columns>
+        <column name="CustomerTypeID" type="nchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="20" />
+        <column name="CustomerDesc" type="ntext" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="16" />
+      </columns>
+      <keys>
+        <key name="PK_CustomerDemographics" type="PK" type_desc="NONCLUSTERED" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM" isDescendingKey="False" columnName="CustomerTypeID" />
+      </keys>
+      <constraints />
+      <indexes>
+        <index name="PK_CustomerDemographics" columnName="CustomerTypeID" type_desc="NONCLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="Region" object_id="885578193" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM">
+      <columns>
+        <column name="RegionID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="RegionDescription" type="nchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="100" />
+      </columns>
+      <keys>
+        <key name="PK_Region" type="PK" type_desc="NONCLUSTERED" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM" isDescendingKey="False" columnName="RegionID" />
+      </keys>
+      <constraints />
+      <indexes>
+        <index name="PK_Region" columnName="RegionID" type_desc="NONCLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="Territories" object_id="901578250" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM">
+      <columns>
+        <column name="TerritoryID" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="40" />
+        <column name="TerritoryDescription" type="nchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="100" />
+        <column name="RegionID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+      </columns>
+      <keys>
+        <key name="PK_Territories" type="PK" type_desc="NONCLUSTERED" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM" isDescendingKey="False" columnName="TerritoryID" />
+        <key name="FK_Territories_Region" type="F " parentTable="Territories" parentColumn="RegionID" referentialTable="Region" referentialColumn="RegionID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+      </keys>
+      <constraints />
+      <indexes>
+        <index name="PK_Territories" columnName="TerritoryID" type_desc="NONCLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="EmployeeTerritories" object_id="917578307" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM">
+      <columns>
+        <column name="EmployeeID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="TerritoryID" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="40" />
+      </columns>
+      <keys>
+        <key name="PK_EmployeeTerritories" type="PK" type_desc="NONCLUSTERED" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM" isDescendingKey="False" columnName="EmployeeID" />
+        <key name="PK_EmployeeTerritories" type="PK" type_desc="NONCLUSTERED" create_date="12/13/2004 4:11:17 PM" modify_date="12/13/2004 4:11:17 PM" isDescendingKey="False" columnName="TerritoryID" />
+        <key name="FK_EmployeeTerritories_Employees" type="F " parentTable="EmployeeTerritories" parentColumn="EmployeeID" referentialTable="Employees" referentialColumn="EmployeeID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+        <key name="FK_EmployeeTerritories_Territories" type="F " parentTable="EmployeeTerritories" parentColumn="TerritoryID" referentialTable="Territories" referentialColumn="TerritoryID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+      </keys>
+      <constraints />
+      <indexes>
+        <index name="PK_EmployeeTerritories" columnName="EmployeeID" type_desc="NONCLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="PK_EmployeeTerritories" columnName="TerritoryID" type_desc="NONCLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="sysdiagrams" object_id="1205579333" type="U " type_desc="USER_TABLE" create_date="8/10/2011 7:32:49 PM" modify_date="8/10/2011 7:32:49 PM">
+      <columns>
+        <column name="name" type="sysname" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="256" />
+        <column name="principal_id" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="diagram_id" type="int" precision="10" scale="0" is_nullable="False" is_identity="True" maxLength="4" />
+        <column name="version" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="definition" type="varbinary" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="-1" />
+      </columns>
+      <keys>
+        <key name="PK__sysdiagrams__48CFD27E" type="PK" type_desc="CLUSTERED" create_date="8/10/2011 7:32:49 PM" modify_date="8/10/2011 7:32:49 PM" isDescendingKey="False" columnName="diagram_id" />
+        <key name="UK_principal_name" type="UQ" type_desc="CLUSTERED" create_date="8/10/2011 7:32:49 PM" modify_date="8/10/2011 7:32:49 PM" isDescendingKey="False" columnName="diagram_id" />
+      </keys>
+      <constraints>
+        <constraint name="UK_principal_name" type="2" type_desc="NONCLUSTERED" ignoreDuplicationKey="False" columnName="principal_id" />
+        <constraint name="UK_principal_name" type="2" type_desc="NONCLUSTERED" ignoreDuplicationKey="False" columnName="name" />
+      </constraints>
+      <indexes>
+        <index name="PK__sysdiagrams__48CFD27E" columnName="diagram_id" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="UK_principal_name" columnName="principal_id" type_desc="NONCLUSTERED" isPrimary="False" isUnique="True" is_descending_key="False" />
+        <index name="UK_principal_name" columnName="name" type_desc="NONCLUSTERED" isPrimary="False" isUnique="True" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="Employees" object_id="1977058079" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM">
+      <columns>
+        <column name="EmployeeID" type="int" precision="10" scale="0" is_nullable="False" is_identity="True" maxLength="4" />
+        <column name="LastName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="40" />
+        <column name="FirstName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="20" />
+        <column name="Title" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="60" />
+        <column name="TitleOfCourtesy" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="50" />
+        <column name="BirthDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="HireDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="Address" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="120" />
+        <column name="City" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="Region" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="PostalCode" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="20" />
+        <column name="Country" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="HomePhone" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="48" />
+        <column name="Extension" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="Photo" type="image" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="16" />
+        <column name="Notes" type="ntext" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="16" />
+        <column name="ReportsTo" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="PhotoPath" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="510" />
+      </columns>
+      <keys>
+        <key name="PK_Employees" type="PK" type_desc="CLUSTERED" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" isDescendingKey="False" columnName="EmployeeID" />
+        <key name="FK_Employees_Employees" type="F " parentTable="Employees" parentColumn="ReportsTo" referentialTable="Employees" referentialColumn="EmployeeID" is_disabled="False" onDeleteAction="NO_ACTION" onUpdateAction="NO_ACTION" />
+      </keys>
+      <constraints>
+        <constraint definition="([BirthDate] &lt; getdate())" name="CK_Birthdate" columnName="BirthDate" type="C " type_desc="CHECK_CONSTRAINT" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" />
+      </constraints>
+      <indexes>
+        <index name="PK_Employees" columnName="EmployeeID" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="LastName" columnName="LastName" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="PostalCode" columnName="PostalCode" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="Categories" object_id="2041058307" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM">
+      <columns>
+        <column name="CategoryID" type="int" precision="10" scale="0" is_nullable="False" is_identity="True" maxLength="4" />
+        <column name="CategoryName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="30" />
+        <column name="Description" type="ntext" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="16" />
+        <column name="Picture" type="image" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="16" />
+      </columns>
+      <keys>
+        <key name="PK_Categories" type="PK" type_desc="CLUSTERED" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" isDescendingKey="False" columnName="CategoryID" />
+      </keys>
+      <constraints />
+      <indexes>
+        <index name="PK_Categories" columnName="CategoryID" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="CategoryName" columnName="CategoryName" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="Customers" object_id="2073058421" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM">
+      <columns>
+        <column name="CustomerID" type="nchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="10" />
+        <column name="CompanyName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="ContactName" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="60" />
+        <column name="ContactTitle" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="60" />
+        <column name="Address" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="120" />
+        <column name="City" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="Region" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="PostalCode" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="20" />
+        <column name="Country" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="Phone" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="48" />
+        <column name="Fax" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="48" />
+      </columns>
+      <keys>
+        <key name="PK_Customers" type="PK" type_desc="CLUSTERED" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" isDescendingKey="False" columnName="CustomerID" />
+      </keys>
+      <constraints />
+      <indexes>
+        <index name="PK_Customers" columnName="CustomerID" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="City" columnName="City" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="CompanyName" columnName="CompanyName" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="PostalCode" columnName="PostalCode" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="Region" columnName="Region" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="Shippers" object_id="2105058535" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM">
+      <columns>
+        <column name="ShipperID" type="int" precision="10" scale="0" is_nullable="False" is_identity="True" maxLength="4" />
+        <column name="CompanyName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="Phone" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="48" />
+      </columns>
+      <keys>
+        <key name="PK_Shippers" type="PK" type_desc="CLUSTERED" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" isDescendingKey="False" columnName="ShipperID" />
+      </keys>
+      <constraints />
+      <indexes>
+        <index name="PK_Shippers" columnName="ShipperID" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+      </indexes>
+    </table>
+    <table schemaName="dbo" tableName="Suppliers" object_id="2137058649" type="U " type_desc="USER_TABLE" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM">
+      <columns>
+        <column name="SupplierID" type="int" precision="10" scale="0" is_nullable="False" is_identity="True" maxLength="4" />
+        <column name="CompanyName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="ContactName" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="60" />
+        <column name="ContactTitle" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="60" />
+        <column name="Address" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="120" />
+        <column name="City" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="Region" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="PostalCode" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="20" />
+        <column name="Country" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="Phone" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="48" />
+        <column name="Fax" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="48" />
+        <column name="HomePage" type="ntext" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="16" />
+      </columns>
+      <keys>
+        <key name="PK_Suppliers" type="PK" type_desc="CLUSTERED" create_date="12/13/2004 4:11:09 PM" modify_date="12/13/2004 4:11:09 PM" isDescendingKey="False" columnName="SupplierID" />
+      </keys>
+      <constraints />
+      <indexes>
+        <index name="PK_Suppliers" columnName="SupplierID" type_desc="CLUSTERED" isPrimary="True" isUnique="True" is_descending_key="False" />
+        <index name="CompanyName" columnName="CompanyName" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+        <index name="PostalCode" columnName="PostalCode" type_desc="NONCLUSTERED" isPrimary="False" isUnique="False" is_descending_key="False" />
+      </indexes>
+    </table>
+  </tables>
+  <views>
+    <view name="Customer and Suppliers by City" object_id="485576768" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:09 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Customer and Suppliers by City" AS
+SELECT City, CompanyName, ContactName, 'Customers' AS Relationship 
+FROM Customers
+UNION SELECT City, CompanyName, ContactName, 'Suppliers'
+FROM Suppliers
+--ORDER BY City, CompanyName
+</view-value>
+      <columns>
+        <column name="City" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="CompanyName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="ContactName" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="60" />
+        <column name="Relationship" type="varchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="9" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Alphabetical list of products" object_id="501576825" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Alphabetical list of products" AS
+SELECT Products.*, Categories.CategoryName
+FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID
+WHERE (((Products.Discontinued)=0))
+</view-value>
+      <columns>
+        <column name="ProductID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="SupplierID" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="CategoryID" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="QuantityPerUnit" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="40" />
+        <column name="UnitPrice" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="UnitsInStock" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="UnitsOnOrder" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="ReorderLevel" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="Discontinued" type="bit" precision="1" scale="0" is_nullable="False" is_identity="False" maxLength="1" />
+        <column name="CategoryName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="30" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Current Product List" object_id="517576882" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Current Product List" AS
+SELECT Product_List.ProductID, Product_List.ProductName
+FROM Products AS Product_List
+WHERE (((Product_List.Discontinued)=0))
+--ORDER BY Product_List.ProductName
+</view-value>
+      <columns>
+        <column name="ProductID" type="int" precision="10" scale="0" is_nullable="False" is_identity="True" maxLength="4" />
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Orders Qry" object_id="533576939" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Orders Qry" AS
+SELECT Orders.OrderID, Orders.CustomerID, Orders.EmployeeID, Orders.OrderDate, Orders.RequiredDate, 
+	Orders.ShippedDate, Orders.ShipVia, Orders.Freight, Orders.ShipName, Orders.ShipAddress, Orders.ShipCity, 
+	Orders.ShipRegion, Orders.ShipPostalCode, Orders.ShipCountry, 
+	Customers.CompanyName, Customers.Address, Customers.City, Customers.Region, Customers.PostalCode, Customers.Country
+FROM Customers INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+</view-value>
+      <columns>
+        <column name="OrderID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="CustomerID" type="nchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="10" />
+        <column name="EmployeeID" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="OrderDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="RequiredDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="ShippedDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="ShipVia" type="int" precision="10" scale="0" is_nullable="True" is_identity="False" maxLength="4" />
+        <column name="Freight" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="ShipName" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="80" />
+        <column name="ShipAddress" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="120" />
+        <column name="ShipCity" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="ShipRegion" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="ShipPostalCode" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="20" />
+        <column name="ShipCountry" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="CompanyName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="Address" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="120" />
+        <column name="City" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="Region" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="PostalCode" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="20" />
+        <column name="Country" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Products Above Average Price" object_id="549576996" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Products Above Average Price" AS
+SELECT Products.ProductName, Products.UnitPrice
+FROM Products
+WHERE Products.UnitPrice&gt;(SELECT AVG(UnitPrice) From Products)
+--ORDER BY Products.UnitPrice DESC
+</view-value>
+      <columns>
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="UnitPrice" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Products by Category" object_id="565577053" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Products by Category" AS
+SELECT Categories.CategoryName, Products.ProductName, Products.QuantityPerUnit, Products.UnitsInStock, Products.Discontinued
+FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID
+WHERE Products.Discontinued &lt;&gt; 1
+--ORDER BY Categories.CategoryName, Products.ProductName
+</view-value>
+      <columns>
+        <column name="CategoryName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="30" />
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="QuantityPerUnit" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="40" />
+        <column name="UnitsInStock" type="smallint" precision="5" scale="0" is_nullable="True" is_identity="False" maxLength="2" />
+        <column name="Discontinued" type="bit" precision="1" scale="0" is_nullable="False" is_identity="False" maxLength="1" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Quarterly Orders" object_id="581577110" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Quarterly Orders" AS
+SELECT DISTINCT Customers.CustomerID, Customers.CompanyName, Customers.City, Customers.Country
+FROM Customers RIGHT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+WHERE Orders.OrderDate BETWEEN '19970101' And '19971231'
+</view-value>
+      <columns>
+        <column name="CustomerID" type="nchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="10" />
+        <column name="CompanyName" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="80" />
+        <column name="City" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="Country" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Invoices" object_id="597577167" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view Invoices AS
+SELECT Orders.ShipName, Orders.ShipAddress, Orders.ShipCity, Orders.ShipRegion, Orders.ShipPostalCode, 
+	Orders.ShipCountry, Orders.CustomerID, Customers.CompanyName AS CustomerName, Customers.Address, Customers.City, 
+	Customers.Region, Customers.PostalCode, Customers.Country, 
+	(FirstName + ' ' + LastName) AS Salesperson, 
+	Orders.OrderID, Orders.OrderDate, Orders.RequiredDate, Orders.ShippedDate, Shippers.CompanyName As ShipperName, 
+	"Order Details".ProductID, Products.ProductName, "Order Details".UnitPrice, "Order Details".Quantity, 
+	"Order Details".Discount, 
+	(CONVERT(money,("Order Details".UnitPrice*Quantity*(1-Discount)/100))*100) AS ExtendedPrice, Orders.Freight
+FROM 	Shippers INNER JOIN 
+		(Products INNER JOIN 
+			(
+				(Employees INNER JOIN 
+					(Customers INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID) 
+				ON Employees.EmployeeID = Orders.EmployeeID) 
+			INNER JOIN "Order Details" ON Orders.OrderID = "Order Details".OrderID) 
+		ON Products.ProductID = "Order Details".ProductID) 
+	ON Shippers.ShipperID = Orders.ShipVia
+</view-value>
+      <columns>
+        <column name="ShipName" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="80" />
+        <column name="ShipAddress" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="120" />
+        <column name="ShipCity" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="ShipRegion" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="ShipPostalCode" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="20" />
+        <column name="ShipCountry" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="CustomerID" type="nchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="10" />
+        <column name="CustomerName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="Address" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="120" />
+        <column name="City" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="Region" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="PostalCode" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="20" />
+        <column name="Country" type="nvarchar" precision="0" scale="0" is_nullable="True" is_identity="False" maxLength="30" />
+        <column name="Salesperson" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="62" />
+        <column name="OrderID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="OrderDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="RequiredDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="ShippedDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="ShipperName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="ProductID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="UnitPrice" type="money" precision="19" scale="4" is_nullable="False" is_identity="False" maxLength="8" />
+        <column name="Quantity" type="smallint" precision="5" scale="0" is_nullable="False" is_identity="False" maxLength="2" />
+        <column name="Discount" type="real" precision="24" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="ExtendedPrice" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="Freight" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Order Details Extended" object_id="613577224" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Order Details Extended" AS
+SELECT "Order Details".OrderID, "Order Details".ProductID, Products.ProductName, 
+	"Order Details".UnitPrice, "Order Details".Quantity, "Order Details".Discount, 
+	(CONVERT(money,("Order Details".UnitPrice*Quantity*(1-Discount)/100))*100) AS ExtendedPrice
+FROM Products INNER JOIN "Order Details" ON Products.ProductID = "Order Details".ProductID
+--ORDER BY "Order Details".OrderID
+</view-value>
+      <columns>
+        <column name="OrderID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="ProductID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="UnitPrice" type="money" precision="19" scale="4" is_nullable="False" is_identity="False" maxLength="8" />
+        <column name="Quantity" type="smallint" precision="5" scale="0" is_nullable="False" is_identity="False" maxLength="2" />
+        <column name="Discount" type="real" precision="24" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="ExtendedPrice" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Order Subtotals" object_id="629577281" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Order Subtotals" AS
+SELECT "Order Details".OrderID, Sum(CONVERT(money,("Order Details".UnitPrice*Quantity*(1-Discount)/100))*100) AS Subtotal
+FROM "Order Details"
+GROUP BY "Order Details".OrderID
+</view-value>
+      <columns>
+        <column name="OrderID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="Subtotal" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Product Sales for 1997" object_id="645577338" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Product Sales for 1997" AS
+SELECT Categories.CategoryName, Products.ProductName, 
+Sum(CONVERT(money,("Order Details".UnitPrice*Quantity*(1-Discount)/100))*100) AS ProductSales
+FROM (Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID) 
+	INNER JOIN (Orders 
+		INNER JOIN "Order Details" ON Orders.OrderID = "Order Details".OrderID) 
+	ON Products.ProductID = "Order Details".ProductID
+WHERE (((Orders.ShippedDate) Between '19970101' And '19971231'))
+GROUP BY Categories.CategoryName, Products.ProductName
+</view-value>
+      <columns>
+        <column name="CategoryName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="30" />
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="ProductSales" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Category Sales for 1997" object_id="661577395" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Category Sales for 1997" AS
+SELECT "Product Sales for 1997".CategoryName, Sum("Product Sales for 1997".ProductSales) AS CategorySales
+FROM "Product Sales for 1997"
+GROUP BY "Product Sales for 1997".CategoryName
+</view-value>
+      <columns>
+        <column name="CategoryName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="30" />
+        <column name="CategorySales" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Sales by Category" object_id="677577452" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Sales by Category" AS
+SELECT Categories.CategoryID, Categories.CategoryName, Products.ProductName, 
+	Sum("Order Details Extended".ExtendedPrice) AS ProductSales
+FROM 	Categories INNER JOIN 
+		(Products INNER JOIN 
+			(Orders INNER JOIN "Order Details Extended" ON Orders.OrderID = "Order Details Extended".OrderID) 
+		ON Products.ProductID = "Order Details Extended".ProductID) 
+	ON Categories.CategoryID = Products.CategoryID
+WHERE Orders.OrderDate BETWEEN '19970101' And '19971231'
+GROUP BY Categories.CategoryID, Categories.CategoryName, Products.ProductName
+--ORDER BY Products.ProductName
+</view-value>
+      <columns>
+        <column name="CategoryID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="CategoryName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="30" />
+        <column name="ProductName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="ProductSales" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Sales Totals by Amount" object_id="693577509" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Sales Totals by Amount" AS
+SELECT "Order Subtotals".Subtotal AS SaleAmount, Orders.OrderID, Customers.CompanyName, Orders.ShippedDate
+FROM 	Customers INNER JOIN 
+		(Orders INNER JOIN "Order Subtotals" ON Orders.OrderID = "Order Subtotals".OrderID) 
+	ON Customers.CustomerID = Orders.CustomerID
+WHERE ("Order Subtotals".Subtotal &gt;2500) AND (Orders.ShippedDate BETWEEN '19970101' And '19971231')
+</view-value>
+      <columns>
+        <column name="SaleAmount" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="OrderID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="CompanyName" type="nvarchar" precision="0" scale="0" is_nullable="False" is_identity="False" maxLength="80" />
+        <column name="ShippedDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Summary of Sales by Quarter" object_id="709577566" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Summary of Sales by Quarter" AS
+SELECT Orders.ShippedDate, Orders.OrderID, "Order Subtotals".Subtotal
+FROM Orders INNER JOIN "Order Subtotals" ON Orders.OrderID = "Order Subtotals".OrderID
+WHERE Orders.ShippedDate IS NOT NULL
+--ORDER BY Orders.ShippedDate
+</view-value>
+      <columns>
+        <column name="ShippedDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="OrderID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="Subtotal" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+    <view name="Summary of Sales by Year" object_id="725577623" schemaName="dbo" schema_id="1" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM">
+      <view-value>
+create view "Summary of Sales by Year" AS
+SELECT Orders.ShippedDate, Orders.OrderID, "Order Subtotals".Subtotal
+FROM Orders INNER JOIN "Order Subtotals" ON Orders.OrderID = "Order Subtotals".OrderID
+WHERE Orders.ShippedDate IS NOT NULL
+--ORDER BY Orders.ShippedDate
+</view-value>
+      <columns>
+        <column name="ShippedDate" type="datetime" precision="23" scale="3" is_nullable="True" is_identity="False" maxLength="8" />
+        <column name="OrderID" type="int" precision="10" scale="0" is_nullable="False" is_identity="False" maxLength="4" />
+        <column name="Subtotal" type="money" precision="19" scale="4" is_nullable="True" is_identity="False" maxLength="8" />
+      </columns>
+      <indexes />
+    </view>
+  </views>
+  <procedures>
+    <procedure name="Ten Most Expensive Products" object_id="741577680" schemaName="dbo" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+create procedure "Ten Most Expensive Products" AS
+SET ROWCOUNT 10
+SELECT Products.ProductName AS TenMostExpensiveProducts, Products.UnitPrice
+FROM Products
+ORDER BY Products.UnitPrice DESC
+</procedure-value>
+      <parameters />
+    </procedure>
+    <procedure name="Employee Sales by Country" object_id="757577737" schemaName="dbo" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+create procedure "Employee Sales by Country" 
+@Beginning_Date DateTime, @Ending_Date DateTime AS
+SELECT Employees.Country, Employees.LastName, Employees.FirstName, Orders.ShippedDate, Orders.OrderID, "Order Subtotals".Subtotal AS SaleAmount
+FROM Employees INNER JOIN 
+	(Orders INNER JOIN "Order Subtotals" ON Orders.OrderID = "Order Subtotals".OrderID) 
+	ON Employees.EmployeeID = Orders.EmployeeID
+WHERE Orders.ShippedDate Between @Beginning_Date And @Ending_Date
+</procedure-value>
+      <parameters>
+        <parameter name="@Beginning_Date" type="datetime" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@Ending_Date" type="datetime" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="Sales by Year" object_id="773577794" schemaName="dbo" create_date="12/13/2004 4:11:10 PM" modify_date="6/14/2017 5:21:57 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+create procedure "Sales by Year" 
+	@Beginning_Date DateTime, @Ending_Date DateTime AS
+SELECT Orders.ShippedDate, Orders.OrderID, "Order Subtotals".Subtotal, DATENAME(yy,ShippedDate) AS Year
+FROM Orders INNER JOIN "Order Subtotals" ON Orders.OrderID = "Order Subtotals".OrderID
+WHERE Orders.ShippedDate Between @Beginning_Date And @Ending_Date
+</procedure-value>
+      <parameters>
+        <parameter name="@Beginning_Date" type="datetime" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@Ending_Date" type="datetime" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="CustOrdersDetail" object_id="789577851" schemaName="dbo" create_date="12/13/2004 4:11:16 PM" modify_date="6/14/2017 5:21:57 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+CREATE PROCEDURE CustOrdersDetail @OrderID int
+AS
+SELECT ProductName,
+    UnitPrice=ROUND(Od.UnitPrice, 2),
+    Quantity,
+    Discount=CONVERT(int, Discount * 100), 
+    ExtendedPrice=ROUND(CONVERT(money, Quantity * (1 - Discount) * Od.UnitPrice), 2)
+FROM Products P, [Order Details] Od
+WHERE Od.ProductID = P.ProductID and Od.OrderID = @OrderID
+</procedure-value>
+      <parameters>
+        <parameter name="@OrderID" type="int" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="CustOrdersOrders" object_id="805577908" schemaName="dbo" create_date="12/13/2004 4:11:16 PM" modify_date="6/14/2017 5:21:57 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+CREATE PROCEDURE CustOrdersOrders @CustomerID nchar(5)
+AS
+SELECT OrderID, 
+	OrderDate,
+	RequiredDate,
+	ShippedDate
+FROM Orders
+WHERE CustomerID = @CustomerID
+ORDER BY OrderID
+</procedure-value>
+      <parameters>
+        <parameter name="@CustomerID" type="nchar" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="CustOrderHist" object_id="821577965" schemaName="dbo" create_date="12/13/2004 4:11:16 PM" modify_date="6/14/2017 5:21:57 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>CREATE PROCEDURE CustOrderHist @CustomerID nchar(5)
+AS
+SELECT ProductName, Total=SUM(Quantity)
+FROM Products P, [Order Details] OD, Orders O, Customers C
+WHERE C.CustomerID = @CustomerID
+AND C.CustomerID = O.CustomerID AND O.OrderID = OD.OrderID AND OD.ProductID = P.ProductID
+GROUP BY ProductName
+</procedure-value>
+      <parameters>
+        <parameter name="@CustomerID" type="nchar" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="SalesByCategory" object_id="837578022" schemaName="dbo" create_date="12/13/2004 4:11:16 PM" modify_date="6/14/2017 5:21:57 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>CREATE PROCEDURE SalesByCategory
+    @CategoryName nvarchar(15), @OrdYear nvarchar(4) = '1998'
+AS
+IF @OrdYear != '1996' AND @OrdYear != '1997' AND @OrdYear != '1998' 
+BEGIN
+	SELECT @OrdYear = '1998'
+END
+
+SELECT ProductName,
+	TotalPurchase=ROUND(SUM(CONVERT(decimal(14,2), OD.Quantity * (1-OD.Discount) * OD.UnitPrice)), 0)
+FROM [Order Details] OD, Orders O, Products P, Categories C
+WHERE OD.OrderID = O.OrderID 
+	AND OD.ProductID = P.ProductID 
+	AND P.CategoryID = C.CategoryID
+	AND C.CategoryName = @CategoryName
+	AND SUBSTRING(CONVERT(nvarchar(22), O.OrderDate, 111), 1, 4) = @OrdYear
+GROUP BY ProductName
+ORDER BY ProductName
+</procedure-value>
+      <parameters>
+        <parameter name="@CategoryName" type="nvarchar" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@OrdYear" type="nvarchar" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="sp_upgraddiagrams" object_id="1189579276" schemaName="dbo" create_date="8/10/2011 7:32:49 PM" modify_date="6/14/2017 5:21:57 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+	CREATE PROCEDURE dbo.sp_upgraddiagrams
+	AS
+	BEGIN
+		IF OBJECT_ID(N'dbo.sysdiagrams') IS NOT NULL
+			return 0;
+	
+		CREATE TABLE dbo.sysdiagrams
+		(
+			name sysname NOT NULL,
+			principal_id int NOT NULL,	-- we may change it to varbinary(85)
+			diagram_id int PRIMARY KEY IDENTITY,
+			version int,
+	
+			definition varbinary(max)
+			CONSTRAINT UK_principal_name UNIQUE
+			(
+				principal_id,
+				name
+			)
+		);
+
+
+		/* Add this if we need to have some form of extended properties for diagrams */
+		/*
+		IF OBJECT_ID(N'dbo.sysdiagram_properties') IS NULL
+		BEGIN
+			CREATE TABLE dbo.sysdiagram_properties
+			(
+				diagram_id int,
+				name sysname,
+				value varbinary(max) NOT NULL
+			)
+		END
+		*/
+
+		IF OBJECT_ID(N'dbo.dtproperties') IS NOT NULL
+		begin
+			insert into dbo.sysdiagrams
+			(
+				[name],
+				[principal_id],
+				[version],
+				[definition]
+			)
+			select	 
+				convert(sysname, dgnm.[uvalue]),
+				DATABASE_PRINCIPAL_ID(N'dbo'),			-- will change to the sid of sa
+				0,							-- zero for old format, dgdef.[version],
+				dgdef.[lvalue]
+			from dbo.[dtproperties] dgnm
+				inner join dbo.[dtproperties] dggd on dggd.[property] = 'DtgSchemaGUID' and dggd.[objectid] = dgnm.[objectid]	
+				inner join dbo.[dtproperties] dgdef on dgdef.[property] = 'DtgSchemaDATA' and dgdef.[objectid] = dgnm.[objectid]
+				
+			where dgnm.[property] = 'DtgSchemaNAME' and dggd.[uvalue] like N'_EA3E6268-D998-11CE-9454-00AA00A3F36E_' 
+			return 2;
+		end
+		return 1;
+	END
+	</procedure-value>
+      <parameters />
+    </procedure>
+    <procedure name="sp_helpdiagrams" object_id="1253579504" schemaName="dbo" create_date="8/10/2011 7:32:49 PM" modify_date="8/10/2011 7:32:49 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+	CREATE PROCEDURE dbo.sp_helpdiagrams
+	(
+		@diagramname sysname = NULL,
+		@owner_id int = NULL
+	)
+	WITH EXECUTE AS N'dbo'
+	AS
+	BEGIN
+		DECLARE @user sysname
+		DECLARE @dboLogin bit
+		EXECUTE AS CALLER;
+			SET @user = USER_NAME();
+			SET @dboLogin = CONVERT(bit,IS_MEMBER('db_owner'));
+		REVERT;
+		SELECT
+			[Database] = DB_NAME(),
+			[Name] = name,
+			[ID] = diagram_id,
+			[Owner] = USER_NAME(principal_id),
+			[OwnerID] = principal_id
+		FROM
+			sysdiagrams
+		WHERE
+			(@dboLogin = 1 OR USER_NAME(principal_id) = @user) AND
+			(@diagramname IS NULL OR name = @diagramname) AND
+			(@owner_id IS NULL OR principal_id = @owner_id)
+		ORDER BY
+			4, 5, 1
+	END
+	</procedure-value>
+      <parameters>
+        <parameter name="@diagramname" type="sysname" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@owner_id" type="int" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="sp_helpdiagramdefinition" object_id="1269579561" schemaName="dbo" create_date="8/10/2011 7:32:49 PM" modify_date="8/10/2011 7:32:49 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+	CREATE PROCEDURE dbo.sp_helpdiagramdefinition
+	(
+		@diagramname 	sysname,
+		@owner_id	int	= null 		
+	)
+	WITH EXECUTE AS N'dbo'
+	AS
+	BEGIN
+		set nocount on
+
+		declare @theId 		int
+		declare @IsDbo 		int
+		declare @DiagId		int
+		declare @UIDFound	int
+	
+		if(@diagramname is null)
+		begin
+			RAISERROR (N'E_INVALIDARG', 16, 1);
+			return -1
+		end
+	
+		execute as caller;
+		select @theId = DATABASE_PRINCIPAL_ID();
+		select @IsDbo = IS_MEMBER(N'db_owner');
+		if(@owner_id is null)
+			select @owner_id = @theId;
+		revert; 
+	
+		select @DiagId = diagram_id, @UIDFound = principal_id from dbo.sysdiagrams where principal_id = @owner_id and name = @diagramname;
+		if(@DiagId IS NULL or (@IsDbo = 0 and @UIDFound &lt;&gt; @theId ))
+		begin
+			RAISERROR ('Diagram does not exist or you do not have permission.', 16, 1);
+			return -3
+		end
+
+		select version, definition FROM dbo.sysdiagrams where diagram_id = @DiagId ; 
+		return 0
+	END
+	</procedure-value>
+      <parameters>
+        <parameter name="@diagramname" type="sysname" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@owner_id" type="int" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="sp_creatediagram" object_id="1285579618" schemaName="dbo" create_date="8/10/2011 7:32:49 PM" modify_date="8/10/2011 7:32:49 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+	CREATE PROCEDURE dbo.sp_creatediagram
+	(
+		@diagramname 	sysname,
+		@owner_id		int	= null, 	
+		@version 		int,
+		@definition 	varbinary(max)
+	)
+	WITH EXECUTE AS 'dbo'
+	AS
+	BEGIN
+		set nocount on
+	
+		declare @theId int
+		declare @retval int
+		declare @IsDbo	int
+		declare @userName sysname
+		if(@version is null or @diagramname is null)
+		begin
+			RAISERROR (N'E_INVALIDARG', 16, 1);
+			return -1
+		end
+	
+		execute as caller;
+		select @theId = DATABASE_PRINCIPAL_ID(); 
+		select @IsDbo = IS_MEMBER(N'db_owner');
+		revert; 
+		
+		if @owner_id is null
+		begin
+			select @owner_id = @theId;
+		end
+		else
+		begin
+			if @theId &lt;&gt; @owner_id
+			begin
+				if @IsDbo = 0
+				begin
+					RAISERROR (N'E_INVALIDARG', 16, 1);
+					return -1
+				end
+				select @theId = @owner_id
+			end
+		end
+		-- next 2 line only for test, will be removed after define name unique
+		if EXISTS(select diagram_id from dbo.sysdiagrams where principal_id = @theId and name = @diagramname)
+		begin
+			RAISERROR ('The name is already used.', 16, 1);
+			return -2
+		end
+	
+		insert into dbo.sysdiagrams(name, principal_id , version, definition)
+				VALUES(@diagramname, @theId, @version, @definition) ;
+		
+		select @retval = @@IDENTITY 
+		return @retval
+	END
+	</procedure-value>
+      <parameters>
+        <parameter name="@diagramname" type="sysname" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@owner_id" type="int" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@version" type="int" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@definition" type="varbinary" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="sp_renamediagram" object_id="1301579675" schemaName="dbo" create_date="8/10/2011 7:32:49 PM" modify_date="8/10/2011 7:32:49 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+	CREATE PROCEDURE dbo.sp_renamediagram
+	(
+		@diagramname 		sysname,
+		@owner_id		int	= null,
+		@new_diagramname	sysname
+	
+	)
+	WITH EXECUTE AS 'dbo'
+	AS
+	BEGIN
+		set nocount on
+		declare @theId 			int
+		declare @IsDbo 			int
+		
+		declare @UIDFound 		int
+		declare @DiagId			int
+		declare @DiagIdTarg		int
+		declare @u_name			sysname
+		if((@diagramname is null) or (@new_diagramname is null))
+		begin
+			RAISERROR ('Invalid value', 16, 1);
+			return -1
+		end
+	
+		EXECUTE AS CALLER;
+		select @theId = DATABASE_PRINCIPAL_ID();
+		select @IsDbo = IS_MEMBER(N'db_owner'); 
+		if(@owner_id is null)
+			select @owner_id = @theId;
+		REVERT;
+	
+		select @u_name = USER_NAME(@owner_id)
+	
+		select @DiagId = diagram_id, @UIDFound = principal_id from dbo.sysdiagrams where principal_id = @owner_id and name = @diagramname 
+		if(@DiagId IS NULL or (@IsDbo = 0 and @UIDFound &lt;&gt; @theId))
+		begin
+			RAISERROR ('Diagram does not exist or you do not have permission.', 16, 1)
+			return -3
+		end
+	
+		-- if((@u_name is not null) and (@new_diagramname = @diagramname))	-- nothing will change
+		--	return 0;
+	
+		if(@u_name is null)
+			select @DiagIdTarg = diagram_id from dbo.sysdiagrams where principal_id = @theId and name = @new_diagramname
+		else
+			select @DiagIdTarg = diagram_id from dbo.sysdiagrams where principal_id = @owner_id and name = @new_diagramname
+	
+		if((@DiagIdTarg is not null) and  @DiagId &lt;&gt; @DiagIdTarg)
+		begin
+			RAISERROR ('The name is already used.', 16, 1);
+			return -2
+		end		
+	
+		if(@u_name is null)
+			update dbo.sysdiagrams set [name] = @new_diagramname, principal_id = @theId where diagram_id = @DiagId
+		else
+			update dbo.sysdiagrams set [name] = @new_diagramname where diagram_id = @DiagId
+		return 0
+	END
+	</procedure-value>
+      <parameters>
+        <parameter name="@diagramname" type="sysname" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@owner_id" type="int" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@new_diagramname" type="sysname" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="sp_alterdiagram" object_id="1317579732" schemaName="dbo" create_date="8/10/2011 7:32:49 PM" modify_date="8/10/2011 7:32:49 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+	CREATE PROCEDURE dbo.sp_alterdiagram
+	(
+		@diagramname 	sysname,
+		@owner_id	int	= null,
+		@version 	int,
+		@definition 	varbinary(max)
+	)
+	WITH EXECUTE AS 'dbo'
+	AS
+	BEGIN
+		set nocount on
+	
+		declare @theId 			int
+		declare @retval 		int
+		declare @IsDbo 			int
+		
+		declare @UIDFound 		int
+		declare @DiagId			int
+		declare @ShouldChangeUID	int
+	
+		if(@diagramname is null)
+		begin
+			RAISERROR ('Invalid ARG', 16, 1)
+			return -1
+		end
+	
+		execute as caller;
+		select @theId = DATABASE_PRINCIPAL_ID();	 
+		select @IsDbo = IS_MEMBER(N'db_owner'); 
+		if(@owner_id is null)
+			select @owner_id = @theId;
+		revert;
+	
+		select @ShouldChangeUID = 0
+		select @DiagId = diagram_id, @UIDFound = principal_id from dbo.sysdiagrams where principal_id = @owner_id and name = @diagramname 
+		
+		if(@DiagId IS NULL or (@IsDbo = 0 and @theId &lt;&gt; @UIDFound))
+		begin
+			RAISERROR ('Diagram does not exist or you do not have permission.', 16, 1);
+			return -3
+		end
+	
+		if(@IsDbo &lt;&gt; 0)
+		begin
+			if(@UIDFound is null or USER_NAME(@UIDFound) is null) -- invalid principal_id
+			begin
+				select @ShouldChangeUID = 1 ;
+			end
+		end
+
+		-- update dds data			
+		update dbo.sysdiagrams set definition = @definition where diagram_id = @DiagId ;
+
+		-- change owner
+		if(@ShouldChangeUID = 1)
+			update dbo.sysdiagrams set principal_id = @theId where diagram_id = @DiagId ;
+
+		-- update dds version
+		if(@version is not null)
+			update dbo.sysdiagrams set version = @version where diagram_id = @DiagId ;
+
+		return 0
+	END
+	</procedure-value>
+      <parameters>
+        <parameter name="@diagramname" type="sysname" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@owner_id" type="int" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@version" type="int" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@definition" type="varbinary" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+    <procedure name="sp_dropdiagram" object_id="1333579789" schemaName="dbo" create_date="8/10/2011 7:32:49 PM" modify_date="8/10/2011 7:32:49 PM" type="P " type_desc="SQL_STORED_PROCEDURE">
+      <procedure-value>
+	CREATE PROCEDURE dbo.sp_dropdiagram
+	(
+		@diagramname 	sysname,
+		@owner_id	int	= null
+	)
+	WITH EXECUTE AS 'dbo'
+	AS
+	BEGIN
+		set nocount on
+		declare @theId 			int
+		declare @IsDbo 			int
+		
+		declare @UIDFound 		int
+		declare @DiagId			int
+	
+		if(@diagramname is null)
+		begin
+			RAISERROR ('Invalid value', 16, 1);
+			return -1
+		end
+	
+		EXECUTE AS CALLER;
+		select @theId = DATABASE_PRINCIPAL_ID();
+		select @IsDbo = IS_MEMBER(N'db_owner'); 
+		if(@owner_id is null)
+			select @owner_id = @theId;
+		REVERT; 
+		
+		select @DiagId = diagram_id, @UIDFound = principal_id from dbo.sysdiagrams where principal_id = @owner_id and name = @diagramname 
+		if(@DiagId IS NULL or (@IsDbo = 0 and @UIDFound &lt;&gt; @theId))
+		begin
+			RAISERROR ('Diagram does not exist or you do not have permission.', 16, 1)
+			return -3
+		end
+	
+		delete from dbo.sysdiagrams where diagram_id = @DiagId;
+	
+		return 0;
+	END
+	</procedure-value>
+      <parameters>
+        <parameter name="@diagramname" type="sysname" is_output="False" has_default_value="False" default_value="" />
+        <parameter name="@owner_id" type="int" is_output="False" has_default_value="False" default_value="" />
+      </parameters>
+    </procedure>
+  </procedures>
+</NORTHWND>

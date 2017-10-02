@@ -1,0 +1,184 @@
+2017-07-14 17:24:11,708  INFO 1  DbClientLogger - Start execution
+2017-07-14 17:24:11,725  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 17:24:11,746  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 17:24:11,763  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 17:24:11,859  INFO 1  DbClientLogger - Search ran!
+2017-07-14 17:24:12,182  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 17:24:14,453  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 17:24:14,461  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 17:24:14,480  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 17:24:14,486  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 17:24:14,511  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 17:24:14,517  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 17:25:10,304  INFO 1  DbClientLogger - Start execution
+2017-07-14 17:25:10,322  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 17:25:10,345  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 17:25:10,372  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 17:25:10,878  INFO 1  DbClientLogger - Search ran!
+2017-07-14 17:25:11,001  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 17:25:12,707  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 17:25:12,719  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 17:25:12,729  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 17:25:12,736  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 17:25:12,762  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 17:25:12,769  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 17:25:12,850  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-14 17:25:12,856  INFO 1  DbClientLogger - Search finished!
+2017-07-14 17:29:27,504  INFO 1  DbClientLogger - Start execution
+2017-07-14 17:29:27,544  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 17:29:27,565  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 17:29:27,574  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 17:29:27,676  INFO 1  DbClientLogger - Search ran!
+2017-07-14 17:29:28,125  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 17:51:07,569  INFO 1  DbClientLogger - Start execution
+2017-07-14 17:51:07,625  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 17:51:07,636  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 17:51:07,644  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 17:51:07,740  INFO 1  DbClientLogger - Search ran!
+2017-07-14 17:51:07,848  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 18:06:45,700  INFO 1  DbClientLogger - Start execution
+2017-07-14 18:06:45,716  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 18:06:45,747  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 18:06:45,755  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 18:06:45,849  INFO 1  DbClientLogger - Search ran!
+2017-07-14 18:06:45,876  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 18:06:50,564  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 18:06:50,572  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 18:06:50,581  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 18:06:50,589  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 18:06:50,620  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 18:06:50,629  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 18:06:50,670  ERROR 1  DbClientLogger - FindNode - The given key was not present in the dictionary.
+2017-07-14 18:06:50,676  ERROR 1  DbClientLogger - FindNode - 
+2017-07-14 18:07:30,694  INFO 1  DbClientLogger - Start execution
+2017-07-14 18:07:30,729  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 18:07:30,758  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 18:07:30,801  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 18:07:31,074  INFO 1  DbClientLogger - Search ran!
+2017-07-14 18:07:31,340  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 18:07:32,385  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 18:07:32,391  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 18:07:32,400  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 18:07:32,406  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 18:07:32,430  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 18:07:32,453  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 18:07:32,491  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-14 18:07:32,497  INFO 1  DbClientLogger - Search finished!
+2017-07-14 18:08:41,724  INFO 1  DbClientLogger - Start execution
+2017-07-14 18:08:41,764  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 18:08:41,805  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 18:08:41,821  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 18:08:42,036  INFO 1  DbClientLogger - Search ran!
+2017-07-14 18:08:42,067  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 18:08:43,806  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 18:08:43,812  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 18:08:43,820  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 18:08:43,828  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 18:08:43,849  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 18:08:43,856  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 18:08:43,899  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-14 18:08:43,905  INFO 1  DbClientLogger - Search finished!
+2017-07-14 18:09:54,216  INFO 1  DbClientLogger - Start execution
+2017-07-14 18:09:54,247  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 18:09:54,253  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 18:09:54,261  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 18:09:54,489  INFO 1  DbClientLogger - Search ran!
+2017-07-14 18:09:54,715  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 18:09:55,973  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 18:09:55,988  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 18:09:55,996  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 18:09:56,003  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 18:09:56,026  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 18:09:56,033  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 18:09:56,066  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-14 18:09:56,072  INFO 1  DbClientLogger - Search finished!
+2017-07-14 18:41:28,023  INFO 1  DbClientLogger - Start execution
+2017-07-14 18:41:28,114  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 18:41:28,139  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 18:41:28,182  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 18:41:28,369  INFO 1  DbClientLogger - Search ran!
+2017-07-14 18:41:28,405  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 18:41:29,643  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 18:41:29,650  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 19:03:29,088  INFO 1  DbClientLogger - Start execution
+2017-07-14 19:03:29,132  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 19:03:29,153  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 19:03:29,175  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 19:03:29,242  INFO 1  DbClientLogger - Search ran!
+2017-07-14 19:03:29,375  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 19:03:31,013  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 19:03:31,026  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 19:03:31,041  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 19:03:31,060  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 19:03:31,099  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 19:03:31,106  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 19:03:31,153  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-14 19:03:31,164  INFO 1  DbClientLogger - Search finished!
+2017-07-14 19:03:58,921  INFO 1  DbClientLogger - Start execution
+2017-07-14 19:03:59,053  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 19:03:59,133  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 19:03:59,149  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 19:03:59,769  INFO 1  DbClientLogger - Search ran!
+2017-07-14 19:04:00,060  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 19:04:01,169  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 19:04:01,179  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 19:04:01,197  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 19:04:01,214  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 19:04:01,246  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 19:04:01,255  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 19:11:02,847  INFO 1  DbClientLogger - Start execution
+2017-07-14 19:11:02,866  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 19:11:02,874  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 19:11:02,882  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 19:11:02,938  INFO 1  DbClientLogger - Search ran!
+2017-07-14 19:11:02,984  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 19:11:04,893  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 19:11:04,900  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 19:11:04,908  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 19:11:04,918  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 19:11:04,962  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 19:11:04,969  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 19:11:08,098  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-14 19:11:08,105  INFO 1  DbClientLogger - Search finished!
+2017-07-14 19:27:40,218  INFO 1  DbClientLogger - Start execution
+2017-07-14 19:27:40,260  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 19:27:40,273  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 19:27:40,289  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 19:27:40,379  INFO 1  DbClientLogger - Search ran!
+2017-07-14 19:27:40,537  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 19:27:42,114  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 19:27:42,121  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 19:27:42,130  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 19:27:42,137  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 19:27:42,161  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 19:27:42,167  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 19:27:42,202  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-14 19:27:42,207  INFO 1  DbClientLogger - Search finished!
+2017-07-14 19:39:41,582  INFO 1  DbClientLogger - Start execution
+2017-07-14 19:39:41,604  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 19:39:41,612  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 19:39:41,620  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 19:39:41,658  INFO 1  DbClientLogger - Search ran!
+2017-07-14 19:39:41,687  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 19:39:43,474  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 19:39:43,505  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 19:39:43,520  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 19:39:43,527  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 19:39:43,556  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 19:39:43,604  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 19:39:43,708  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-14 19:39:43,773  INFO 1  DbClientLogger - Search finished!
+2017-07-14 19:47:20,829  INFO 1  DbClientLogger - Start execution
+2017-07-14 19:47:20,849  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-14 19:47:20,858  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-14 19:47:20,873  INFO 1  DbClientLogger - Myronenko.V
+2017-07-14 19:47:21,014  INFO 1  DbClientLogger - Search ran!
+2017-07-14 19:47:21,216  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-14 19:47:23,030  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-14 19:47:23,044  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-14 19:47:23,083  INFO 1  DbClientLogger - FindNode  Founded
+2017-07-14 19:47:23,115  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-07-14 19:47:23,152  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-07-14 19:47:23,159  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-14 19:47:23,201  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-14 19:47:23,207  INFO 1  DbClientLogger - Search finished!

@@ -1,0 +1,68 @@
+2017-09-18 20:12:12,961  INFO 1  DbClientLogger - Start execution
+2017-09-18 20:12:13,061  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-09-18 20:12:13,151  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-09-18 20:12:13,160  INFO 1  DbClientLogger - Myronenko.V
+2017-09-18 20:12:13,847  INFO 1  DbClientLogger - Search ran!
+2017-09-18 20:12:13,857  INFO 1  DbClientLogger - InitializeNode started!
+2017-09-18 20:12:14,551  ERROR 1  DbClientLogger - Search
+System.ArgumentException: type
+   at Loader.Services.Builders.BulkDbNodeBuilder.MakeNode(BuildContext context) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Builders\BulkDbNodeBuilder.cs:line 137
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 124
+2017-09-18 20:12:14,582  ERROR 1  DbClientLogger - Search
+System.ArgumentException: type
+   at Loader.Services.Builders.BulkDbNodeBuilder.MakeNode(BuildContext context) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Builders\BulkDbNodeBuilder.cs:line 137
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 139
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 88
+2017-09-18 20:12:14,606  ERROR 1  DbClientLogger - type
+System.ArgumentException: type
+   at Loader.Services.Builders.BulkDbNodeBuilder.MakeNode(BuildContext context) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Builders\BulkDbNodeBuilder.cs:line 137
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 139
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 113
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 35
+2017-09-18 20:13:53,965  INFO 1  DbClientLogger - Start execution
+2017-09-18 20:13:54,007  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-09-18 20:13:54,017  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-09-18 20:13:54,032  INFO 1  DbClientLogger - Myronenko.V
+2017-09-18 20:13:54,075  INFO 1  DbClientLogger - Search ran!
+2017-09-18 20:13:54,130  INFO 1  DbClientLogger - InitializeNode started!
+2017-09-18 20:16:56,049  INFO 1  DbClientLogger - Start execution
+2017-09-18 20:16:56,194  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-09-18 20:16:56,274  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-09-18 20:16:56,337  INFO 1  DbClientLogger - Myronenko.V
+2017-09-18 20:16:56,606  INFO 1  DbClientLogger - Search ran!
+2017-09-18 20:16:56,652  INFO 1  DbClientLogger - InitializeNode started!
+2017-09-18 20:16:57,212  ERROR 1  DbClientLogger - Search
+System.ArgumentException: type
+   at Loader.Services.Builders.BulkDbNodeBuilder.MakeNode(BuildContext context) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Builders\BulkDbNodeBuilder.cs:line 137
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 124
+2017-09-18 20:16:57,518  ERROR 1  DbClientLogger - Search
+System.ArgumentException: type
+   at Loader.Services.Builders.BulkDbNodeBuilder.MakeNode(BuildContext context) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Builders\BulkDbNodeBuilder.cs:line 137
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 139
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 88
+2017-09-18 20:16:57,712  ERROR 1  DbClientLogger - type
+System.ArgumentException: type
+   at Loader.Services.Builders.BulkDbNodeBuilder.MakeNode(BuildContext context) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Builders\BulkDbNodeBuilder.cs:line 137
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 139
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 113
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 35
+2017-09-18 20:17:29,857  INFO 1  DbClientLogger - Start execution
+2017-09-18 20:17:29,884  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-09-18 20:17:29,895  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-09-18 20:17:29,958  INFO 1  DbClientLogger - Myronenko.V
+2017-09-18 20:17:30,066  INFO 1  DbClientLogger - Search ran!
+2017-09-18 20:17:30,078  INFO 1  DbClientLogger - InitializeNode started!
+2017-09-18 20:19:05,941  INFO 1  DbClientLogger - Start execution
+2017-09-18 20:19:06,006  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-09-18 20:19:06,032  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-09-18 20:19:06,050  INFO 1  DbClientLogger - Myronenko.V
+2017-09-18 20:19:06,150  INFO 1  DbClientLogger - Search ran!
+2017-09-18 20:19:06,167  INFO 1  DbClientLogger - InitializeNode started!
+2017-09-18 20:19:13,088  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-09-18 20:19:13,102  INFO 1  DbClientLogger - FindNode started to find node!
+2017-09-18 20:19:13,134  INFO 1  DbClientLogger - FindNode  Found
+2017-09-18 20:19:13,198  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file (db.xml)!
+2017-09-18 20:19:13,232  INFO 1  DbClientLogger - SerializeNodeToFile finished to serialize node to output file (db.xml)!
+2017-09-18 20:19:13,243  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-09-18 20:19:13,255  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-09-18 20:19:13,271  INFO 1  DbClientLogger - Search finished!

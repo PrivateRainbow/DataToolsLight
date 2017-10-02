@@ -1,0 +1,344 @@
+2017-08-25 13:52:28,240  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 13:52:31,372  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 13:52:43,123  ERROR 1  DataToolsLightLogger - ConnectToServerAsync
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Loader.Helpers.ConnectionTester.<VerifyConnectionAsync>d__2.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\Tester\ConnectionTester.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DataLightViewer.ViewModels.ExplorerViewModel.<ConnectToServerAsync>d__40.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\ViewModels\ExplorerViewModel.cs:line 176
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2017-08-25 13:52:43,262  ERROR 1  DataToolsLightLogger - ConnectToServerAsync
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Loader.Helpers.ConnectionTester.<VerifyConnectionAsync>d__2.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\Tester\ConnectionTester.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DataLightViewer.ViewModels.ExplorerViewModel.<ConnectToServerAsync>d__40.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\ViewModels\ExplorerViewModel.cs:line 176
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2017-08-25 13:53:21,724  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 13:53:21,824  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 13:55:30,681  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 13:55:30,810  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:12:32,594  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:12:32,792  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:14:52,011  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:14:52,195  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:18:28,752  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:18:28,878  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:19:15,886  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:19:16,002  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:26:25,039  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:26:25,450  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:27:05,434  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:27:05,712  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:29:25,576  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:29:25,846  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:29:59,748  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:30:00,082  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:38:40,478  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:38:40,761  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:40:54,971  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:40:55,141  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:59:30,236  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 15:59:30,431  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 15:59:45,369  INFO 1  DataToolsLightLogger - Building sql-script for Columns
+2017-08-25 15:59:45,409  INFO 10  DataToolsLightLogger - Sql-script for Columns was succesfully made!
+2017-08-25 16:03:30,303  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 16:03:30,501  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 16:03:40,374  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-08-25 16:03:40,397  INFO 8  DataToolsLightLogger - Sql-script for Table was succesfully made!
+2017-08-25 16:03:58,160  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-08-25 16:05:29,633  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 16:06:25,739  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 16:07:17,184  INFO 1  DataToolsLightLogger - Building sql-script for Tables
+2017-08-25 16:07:46,744  INFO 11  DataToolsLightLogger - Sql-script for Tables was succesfully made!
+2017-08-25 16:10:03,771  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 16:10:04,028  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 16:10:11,194  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-08-25 16:10:11,248  INFO 10  DataToolsLightLogger - Sql-script for Table was succesfully made!
+2017-08-25 16:12:35,217  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 16:12:35,495  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 16:12:43,818  INFO 1  DataToolsLightLogger - Building sql-script for Tables
+2017-08-25 16:12:43,875  INFO 8  DataToolsLightLogger - Sql-script for Tables was succesfully made!
+2017-08-25 16:14:06,606  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 16:14:06,781  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 16:14:15,284  INFO 1  DataToolsLightLogger - Building sql-script for Tables
+2017-08-25 16:14:15,305  INFO 8  DataToolsLightLogger - Sql-script for Tables was succesfully made!
+2017-08-25 16:14:20,106  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-08-25 16:14:20,115  INFO 10  DataToolsLightLogger - Sql-script for Table was succesfully made!
+2017-08-25 16:14:26,843  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-08-25 16:14:26,851  INFO 8  DataToolsLightLogger - Sql-script for Database was succesfully made!
+2017-08-25 16:17:46,297  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 16:17:46,410  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is extablished!
+2017-08-25 16:17:47,808  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 16:17:47,865  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 16:17:49,766  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 16:17:49,775  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 16:17:50,519  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 16:17:50,589  INFO 8  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 16:17:51,318  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 16:17:51,326  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 16:17:52,950  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 16:17:52,997  INFO 7  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 16:18:00,333  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-08-25 16:18:00,350  INFO 7  DataToolsLightLogger - Sql-script for Table was succesfully made!
+2017-08-25 16:18:17,686  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 16:18:17,694  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 16:18:18,766  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 16:18:18,854  INFO 10  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 18:37:52,586  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 18:38:23,180  ERROR 1  DataToolsLightLogger - ConnectToServerAsync
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Loader.Helpers.ConnectionTester.<VerifyConnectionAsync>d__2.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\Tester\ConnectionTester.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DataLightViewer.ViewModels.ExplorerViewModel.<ConnectToServerAsync>d__40.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\ViewModels\ExplorerViewModel.cs:line 175
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2017-08-25 18:39:45,243  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 18:39:58,571  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 18:40:02,233  ERROR 1  DataToolsLightLogger - ConnectToServerAsync
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Loader.Helpers.ConnectionTester.<VerifyConnectionAsync>d__2.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\Tester\ConnectionTester.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DataLightViewer.ViewModels.ExplorerViewModel.<ConnectToServerAsync>d__40.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\ViewModels\ExplorerViewModel.cs:line 175
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2017-08-25 18:40:12,074  ERROR 1  DataToolsLightLogger - ConnectToServerAsync
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Loader.Helpers.ConnectionTester.<VerifyConnectionAsync>d__2.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\Tester\ConnectionTester.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DataLightViewer.ViewModels.ExplorerViewModel.<ConnectToServerAsync>d__40.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\ViewModels\ExplorerViewModel.cs:line 175
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2017-08-25 18:40:34,499  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 18:40:38,727  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 18:40:42,797  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 18:40:43,128  INFO 11  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 18:40:44,579  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 18:40:44,604  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 18:40:46,516  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 18:40:47,309  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 18:41:33,131  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 18:41:33,180  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 18:41:33,827  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 18:41:34,081  INFO 10  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 18:41:36,571  INFO 1  DataToolsLightLogger - Loading data for Keys
+2017-08-25 18:41:36,728  INFO 7  DataToolsLightLogger - Data for Keys was downloaded
+2017-08-25 18:41:52,139  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-08-25 18:41:52,165  INFO 7  DataToolsLightLogger - Sql-script for Database was succesfully constructed!
+2017-08-25 18:42:14,401  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-08-25 18:42:14,421  INFO 7  DataToolsLightLogger - Sql-script for Table was succesfully constructed!
+2017-08-25 18:43:55,387  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 18:44:03,738  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 18:44:11,075  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 18:44:26,054  INFO 12  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 18:44:34,627  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 18:44:38,802  INFO 12  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 18:45:04,444  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 18:49:23,452  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 18:49:28,935  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 18:49:31,254  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 18:49:36,614  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 18:49:39,180  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 18:49:39,195  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 18:49:39,852  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 18:49:40,236  INFO 10  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 18:49:41,404  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 18:49:41,416  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 18:49:44,308  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 18:49:44,327  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 18:49:46,300  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 18:49:46,647  INFO 7  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 18:50:02,540  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 18:50:02,760  INFO 7  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 18:51:13,672  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 18:51:13,858  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 18:51:14,974  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 18:51:14,999  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 18:51:16,404  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 18:51:16,471  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 18:51:17,132  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 18:51:17,179  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 18:51:17,868  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 18:51:17,888  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 18:51:18,620  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 18:51:18,662  INFO 9  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 18:51:45,308  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 18:51:45,378  INFO 9  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 18:51:46,412  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 18:52:39,804  INFO 1  DataToolsLightLogger - Loading data for Views
+2017-08-25 18:52:40,155  INFO 9  DataToolsLightLogger - Data for Views was downloaded
+2017-08-25 18:52:44,275  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 18:52:44,315  INFO 9  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 18:52:45,068  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 18:52:45,526  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 18:52:46,724  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 18:52:46,732  INFO 9  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 18:52:47,404  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 18:52:47,704  INFO 7  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 18:53:43,436  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 18:53:43,451  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 18:53:44,500  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 19:34:25,144  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 19:34:25,333  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 19:34:26,572  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 19:34:40,841  INFO 8  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 19:34:47,281  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 19:34:47,312  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 19:34:48,162  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 19:34:48,372  INFO 10  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 19:34:49,074  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 19:34:49,107  INFO 8  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 19:34:50,506  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 19:34:50,760  INFO 7  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 19:35:00,013  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-08-25 19:35:00,029  INFO 7  DataToolsLightLogger - Sql-script for Table was succesfully constructed!
+2017-08-25 21:01:53,059  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 21:01:53,324  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 21:02:05,929  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 21:02:06,275  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 21:02:08,055  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 21:02:08,063  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 21:02:09,736  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 21:02:09,888  INFO 6  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 21:02:10,585  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 21:02:10,593  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 21:02:11,375  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 21:02:11,425  INFO 6  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 21:03:58,765  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 21:03:58,922  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 21:04:07,264  INFO 1  DataToolsLightLogger - Searching node with Expr name
+2017-08-25 21:04:07,273  INFO 1  DataToolsLightLogger - Node with such name (Expr) was not found!
+2017-08-25 21:04:18,650  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 21:04:18,970  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 21:04:20,200  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 21:04:20,207  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 21:04:21,855  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 21:04:21,866  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 21:04:22,536  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 21:04:22,711  INFO 10  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 21:04:29,616  INFO 1  DataToolsLightLogger - Searching node with tables name
+2017-08-25 21:04:29,624  INFO 1  DataToolsLightLogger - Node with such name (tables) was found!
+2017-08-25 21:04:33,696  INFO 1  DataToolsLightLogger - Searching node with tables name
+2017-08-25 21:04:33,705  INFO 1  DataToolsLightLogger - Node with such name (tables) was found!
+2017-08-25 21:04:35,328  INFO 1  DataToolsLightLogger - Searching node with tables name
+2017-08-25 21:04:35,335  INFO 1  DataToolsLightLogger - Node with such name (tables) was found!
+2017-08-25 21:04:36,000  INFO 1  DataToolsLightLogger - Searching node with tables name
+2017-08-25 21:04:36,007  INFO 1  DataToolsLightLogger - Node with such name (tables) was found!
+2017-08-25 21:04:36,536  INFO 1  DataToolsLightLogger - Searching node with tables name
+2017-08-25 21:04:36,544  INFO 1  DataToolsLightLogger - Node with such name (tables) was found!
+2017-08-25 21:04:36,992  INFO 1  DataToolsLightLogger - Searching node with tables name
+2017-08-25 21:04:36,999  INFO 1  DataToolsLightLogger - Node with such name (tables) was found!
+2017-08-25 21:06:19,674  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 21:06:19,831  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 21:06:20,899  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 21:06:21,252  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 21:06:22,289  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 21:06:22,303  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 21:08:00,044  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 21:08:00,282  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 21:08:01,483  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 21:08:01,786  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 21:08:03,185  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 21:08:03,193  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 21:08:03,913  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 21:08:04,080  INFO 10  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 21:08:04,737  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 21:08:04,744  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 21:08:05,538  INFO 1  DataToolsLightLogger - Loading data for Keys
+2017-08-25 21:08:05,628  INFO 10  DataToolsLightLogger - Data for Keys was downloaded
+2017-08-25 21:08:06,545  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 21:08:06,606  INFO 6  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 21:09:35,926  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-08-25 21:09:35,959  INFO 9  DataToolsLightLogger - Sql-script for Table was succesfully constructed!
+2017-08-25 21:10:58,237  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 21:10:58,381  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 21:10:59,860  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 21:10:59,916  INFO 10  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 21:11:00,602  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 21:11:00,614  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 21:11:01,986  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 21:11:01,996  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 21:11:11,296  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-08-25 21:11:11,316  INFO 9  DataToolsLightLogger - Sql-script for Database was succesfully constructed!
+2017-08-25 21:11:14,743  INFO 1  DataToolsLightLogger - Building sql-script for Tables
+2017-08-25 21:11:14,751  INFO 10  DataToolsLightLogger - Sql-script for Tables was succesfully constructed!
+2017-08-25 21:11:16,986  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-08-25 21:11:18,122  INFO 6  DataToolsLightLogger - Data for Tables was downloaded
+2017-08-25 21:11:21,266  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-08-25 21:11:21,274  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-08-25 21:11:21,818  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-08-25 21:11:21,873  INFO 9  DataToolsLightLogger - Data for Columns was downloaded
+2017-08-25 21:11:24,088  INFO 1  DataToolsLightLogger - Building sql-script for Tables
+2017-08-25 21:11:24,100  INFO 10  DataToolsLightLogger - Sql-script for Tables was succesfully constructed!
+2017-08-25 21:13:37,333  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 21:13:37,470  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 21:13:38,924  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 21:13:39,010  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 21:13:39,778  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 21:13:39,789  INFO 8  DataToolsLightLogger - Data for Database was downloaded
+2017-08-25 21:14:10,892  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-08-25 21:14:11,037  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-08-25 21:14:12,180  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-08-25 21:14:12,202  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-08-25 21:14:13,026  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-08-25 21:14:13,033  INFO 7  DataToolsLightLogger - Data for Database was downloaded

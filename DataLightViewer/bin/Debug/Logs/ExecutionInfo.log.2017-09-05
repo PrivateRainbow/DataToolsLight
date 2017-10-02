@@ -1,0 +1,238 @@
+2017-09-05 13:56:23,450  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 13:56:38,366  ERROR 1  DataToolsLightLogger - ConnectToServerAsync
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Loader.Helpers.ConnectionTester.<VerifyConnectionAsync>d__2.MoveNext() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Tester\ConnectionTester.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DataLightViewer.ViewModels.ExplorerViewModel.<ConnectToServerAsync>d__44.MoveNext() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\ViewModels\ExplorerViewModel.cs:line 189
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2017-09-05 13:57:48,907  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 13:57:48,992  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 13:57:50,798  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 13:57:51,059  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 13:57:52,372  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 13:57:52,380  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 13:57:53,332  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-05 13:57:53,727  INFO 10  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-05 13:58:19,380  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-05 13:58:19,426  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-09-05 14:27:49,954  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 14:28:54,399  ERROR 6  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 14:30:01,331  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 14:30:16,736  ERROR 7  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 14:40:49,619  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 14:41:07,807  ERROR 6  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 14:46:54,347  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 14:47:28,127  ERROR 6  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 14:48:19,144  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 14:48:35,241  ERROR 6  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 14:59:09,281  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 14:59:51,270  ERROR 7  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 15:02:42,643  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 15:02:51,568  ERROR 6  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 15:03:22,699  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 15:03:28,659  ERROR 7  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 15:24:21,157  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 15:24:29,084  ERROR 7  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 15:25:24,815  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 15:25:31,537  ERROR 7  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 174
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 15:31:01,428  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\icons)
+2017-09-05 15:31:12,998  ERROR 7  DataToolsLightLogger - Error on opening the project.
+System.IO.FileNotFoundException: pathToFile is not valid!
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass15_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\NodeMemento.cs:line 173
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-05 16:13:27,661  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 16:13:27,872  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 16:13:28,930  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 16:13:29,041  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 16:13:31,951  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 16:13:31,971  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 16:13:32,579  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-05 16:13:32,665  INFO 9  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-05 16:13:33,432  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-05 16:13:33,452  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-09-05 16:13:58,976  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 16:13:59,015  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 16:14:00,144  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 16:14:00,213  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 16:14:01,312  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 16:14:01,336  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 16:14:02,231  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-05 16:14:02,297  INFO 6  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-05 16:15:01,490  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 16:15:01,673  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 16:15:02,729  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 16:15:02,810  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 16:15:03,951  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 16:15:03,966  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 16:15:04,552  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-05 16:15:04,903  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-05 16:15:05,455  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-05 16:15:05,470  INFO 9  DataToolsLightLogger - Data for Table was downloaded
+2017-09-05 16:16:26,819  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 16:16:26,979  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 16:16:38,946  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 16:16:39,044  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 16:16:40,071  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 16:16:40,091  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 16:16:40,904  INFO 1  DataToolsLightLogger - Loading data for Views
+2017-09-05 16:16:41,089  INFO 6  DataToolsLightLogger - Data for Views was downloaded
+2017-09-05 16:17:55,078  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 16:17:55,229  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 16:18:04,625  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 16:18:04,703  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 16:18:05,511  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 16:18:05,526  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 16:18:06,824  INFO 1  DataToolsLightLogger - Loading data for Procedures
+2017-09-05 16:18:06,989  INFO 6  DataToolsLightLogger - Data for Procedures was downloaded
+2017-09-05 16:21:13,941  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 16:21:14,089  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 16:21:20,249  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 16:21:20,335  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 16:21:21,639  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 16:21:21,648  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 16:59:12,469  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 16:59:12,605  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 16:59:13,637  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 16:59:13,702  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 16:59:14,466  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 16:59:14,481  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 16:59:17,082  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-05 16:59:17,284  INFO 6  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-05 17:02:33,520  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 17:02:33,658  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 17:02:35,061  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 17:02:35,118  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 17:02:35,930  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 17:02:35,941  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 17:02:36,747  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-05 17:02:36,833  INFO 6  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-05 17:02:38,299  INFO 1  DataToolsLightLogger - Loading data for Views
+2017-09-05 17:02:38,330  INFO 6  DataToolsLightLogger - Data for Views was downloaded
+2017-09-05 17:08:42,124  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 17:08:42,257  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 17:08:43,567  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 17:08:43,630  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 17:08:44,684  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 17:08:44,695  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 17:09:50,282  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 17:09:50,414  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 17:09:51,440  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 17:09:51,520  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 17:09:52,461  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 17:09:52,470  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 17:12:07,075  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 17:12:07,266  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 17:12:12,600  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 17:12:12,665  INFO 8  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 17:12:13,766  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 17:12:13,776  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 17:12:14,575  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-05 17:12:14,685  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-05 17:12:15,662  INFO 1  DataToolsLightLogger - Loading data for Views
+2017-09-05 17:12:15,694  INFO 8  DataToolsLightLogger - Data for Views was downloaded
+2017-09-05 17:12:16,885  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 17:12:16,895  INFO 7  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 17:12:17,975  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-05 17:12:18,052  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-05 17:16:39,060  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 17:16:39,200  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 17:16:40,481  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 17:16:40,578  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 17:16:41,623  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 17:16:41,633  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 17:16:42,760  INFO 1  DataToolsLightLogger - Loading data for Procedures
+2017-09-05 17:16:42,875  INFO 9  DataToolsLightLogger - Data for Procedures was downloaded
+2017-09-05 17:17:02,506  INFO 6  DataToolsLightLogger - Saving the project file by folder path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 17:17:02,650  INFO 6  DataToolsLightLogger - Project was save by path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 17:17:10,336  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 17:17:10,353  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 17:17:11,527  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 17:17:11,579  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 17:17:21,073  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 17:17:21,129  INFO 9  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 17:18:11,151  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 17:18:11,247  INFO 6  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 17:18:13,328  INFO 1  DataToolsLightLogger - Loading data for Views
+2017-09-05 17:18:13,485  INFO 7  DataToolsLightLogger - Data for Views was downloaded
+2017-09-05 17:18:30,647  INFO 6  DataToolsLightLogger - Saving the project file by folder path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 17:18:35,824  INFO 9  DataToolsLightLogger - Project was save by path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 17:18:57,872  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 17:18:57,909  INFO 7  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\sl)
+2017-09-05 18:17:07,619  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-05 18:17:07,795  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-05 18:17:10,143  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-05 18:17:10,263  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-05 18:17:12,365  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-05 18:17:12,374  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-05 18:17:21,613  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-05 18:17:21,677  INFO 6  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-05 18:17:22,613  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-05 18:17:22,632  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-09-05 18:17:23,502  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-05 18:17:23,909  INFO 6  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-05 18:17:26,853  INFO 1  DataToolsLightLogger - Loading data for Keys
+2017-09-05 18:17:26,991  INFO 6  DataToolsLightLogger - Data for Keys was downloaded
+2017-09-05 18:17:28,365  INFO 1  DataToolsLightLogger - Loading data for Indexes
+2017-09-05 18:17:28,397  INFO 6  DataToolsLightLogger - Data for Indexes was downloaded
+2017-09-05 18:17:29,365  INFO 1  DataToolsLightLogger - Loading data for Constraints
+2017-09-05 18:17:29,433  INFO 7  DataToolsLightLogger - Data for Constraints was downloaded
+2017-09-05 18:17:49,933  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-05 18:17:49,952  INFO 10  DataToolsLightLogger - Data for Table was downloaded
+2017-09-05 18:17:51,150  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-05 18:17:51,186  INFO 11  DataToolsLightLogger - Data for Columns was downloaded

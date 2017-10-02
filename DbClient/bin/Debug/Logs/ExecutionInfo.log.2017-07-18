@@ -1,0 +1,13 @@
+2017-07-18 19:27:25,840  INFO 1  DbClientLogger - Start execution
+2017-07-18 19:27:25,969  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-18 19:27:25,991  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-18 19:27:26,002  INFO 1  DbClientLogger - Myronenko.V
+2017-07-18 19:27:29,568  ERROR 1  DbClientLogger - searchContext are not in valid state!
+System.ArgumentException: searchContext are not in valid state!
+   at DbClient.SearchDataDbClient.GetParsedSearchConfig(NodeSearchContext searchContext) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 47
+   at DbClient.SearchDataDbClient..ctor(NodeSearchContext searchContext) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 40
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 34
+2017-07-18 19:28:06,456  INFO 1  DbClientLogger - Start execution
+2017-07-18 19:28:06,474  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-18 19:28:06,483  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-18 19:28:06,495  INFO 1  DbClientLogger - Myronenko.V

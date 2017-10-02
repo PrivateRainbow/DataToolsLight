@@ -1,0 +1,10 @@
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\bin\Debug\DbClient.exe.config
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\bin\Debug\DbClient.exe
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\bin\Debug\DbClient.pdb
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\bin\Debug\Loader.dll
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\bin\Debug\log4net.dll
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\bin\Debug\Loader.pdb
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\bin\Debug\log4net.xml
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\obj\Debug\DbClient.csprojResolveAssemblyReference.cache
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\obj\Debug\DbClient.exe
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\DbClient\obj\Debug\DbClient.pdb

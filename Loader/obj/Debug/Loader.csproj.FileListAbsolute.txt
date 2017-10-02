@@ -1,0 +1,5 @@
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\bin\Debug\Loader.dll
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\bin\Debug\Loader.pdb
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\obj\Debug\Loader.dll
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\obj\Debug\Loader.pdb
+C:\Users\myronenko.v\documents\visual studio 2017\Projects\DataToolsLight\Loader\obj\Debug\Loader.csprojResolveAssemblyReference.cache

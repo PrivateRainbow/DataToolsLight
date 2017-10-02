@@ -1,0 +1,125 @@
+2017-09-01 15:00:00,304  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 15:00:00,425  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 15:00:01,657  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-01 15:00:01,986  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-09-01 15:00:03,239  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-01 15:00:03,246  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-01 15:00:04,135  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-01 15:00:04,502  INFO 6  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-01 15:00:06,287  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-01 15:00:06,294  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-09-01 15:00:14,966  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-01 15:00:15,218  INFO 6  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-01 15:00:19,219  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-09-01 15:00:19,234  INFO 7  DataToolsLightLogger - Sql-script for Table was succesfully constructed!
+2017-09-01 15:00:38,143  INFO 1  DataToolsLightLogger - Searching node with SupplierId name
+2017-09-01 15:00:38,156  INFO 1  DataToolsLightLogger - Node with such name (SupplierId) was found!
+2017-09-01 15:00:41,055  INFO 1  DataToolsLightLogger - Searching node with SupplierId name
+2017-09-01 15:00:41,062  INFO 1  DataToolsLightLogger - Node with such name (SupplierId) was found!
+2017-09-01 15:00:49,247  INFO 1  DataToolsLightLogger - Searching node with ID name
+2017-09-01 15:00:49,259  INFO 1  DataToolsLightLogger - Node with such name (ID) was found!
+2017-09-01 15:00:50,303  INFO 1  DataToolsLightLogger - Searching node with ID name
+2017-09-01 15:00:50,314  INFO 1  DataToolsLightLogger - Node with such name (ID) was found!
+2017-09-01 15:00:51,023  INFO 1  DataToolsLightLogger - Searching node with ID name
+2017-09-01 15:00:51,035  INFO 1  DataToolsLightLogger - Node with such name (ID) was found!
+2017-09-01 15:00:51,471  INFO 1  DataToolsLightLogger - Searching node with ID name
+2017-09-01 15:00:51,482  INFO 1  DataToolsLightLogger - Node with such name (ID) was found!
+2017-09-01 15:00:51,871  INFO 1  DataToolsLightLogger - Searching node with ID name
+2017-09-01 15:00:51,883  INFO 1  DataToolsLightLogger - Node with such name (ID) was found!
+2017-09-01 15:00:52,527  INFO 1  DataToolsLightLogger - Searching node with ID name
+2017-09-01 15:00:52,538  INFO 1  DataToolsLightLogger - Node with such name (ID) was found!
+2017-09-01 17:19:46,296  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:19:46,427  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:23:08,221  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:23:22,118  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:24:48,562  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:25:12,720  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:26:22,865  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:26:29,084  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:27:21,310  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:27:23,964  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:39:24,672  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:39:24,807  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:40:40,239  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:40:40,354  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:41:38,478  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:41:38,592  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:45:02,750  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:45:02,886  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:47:02,504  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:55:03,835  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:55:06,563  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:56:46,820  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:56:46,983  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 17:58:34,008  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 17:58:34,137  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 18:00:34,218  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 18:00:34,328  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 18:01:24,849  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 18:01:24,964  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 18:02:27,239  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 18:02:27,365  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 18:04:58,031  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 18:04:58,144  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 18:06:04,186  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 18:06:04,310  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 19:00:37,426  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 19:00:37,568  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 19:00:38,942  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-01 19:00:39,036  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-01 19:00:39,773  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-01 19:00:39,781  INFO 9  DataToolsLightLogger - Data for Database was downloaded
+2017-09-01 19:00:40,582  INFO 1  DataToolsLightLogger - Loading data for Procedures
+2017-09-01 19:00:40,679  INFO 6  DataToolsLightLogger - Data for Procedures was downloaded
+2017-09-01 19:00:41,653  INFO 1  DataToolsLightLogger - Loading data for Views
+2017-09-01 19:00:41,682  INFO 9  DataToolsLightLogger - Data for Views was downloaded
+2017-09-01 19:00:42,414  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-01 19:00:42,465  INFO 9  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-01 19:00:45,253  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-01 19:00:45,261  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-01 19:00:46,269  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-01 19:00:46,322  INFO 8  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-01 19:00:48,486  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-01 19:00:48,493  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-09-01 19:00:50,925  INFO 1  DataToolsLightLogger - Loading data for Keys
+2017-09-01 19:00:51,103  INFO 8  DataToolsLightLogger - Data for Keys was downloaded
+2017-09-01 19:20:28,134  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 19:20:28,267  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 19:20:29,224  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-01 19:20:29,304  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-01 19:20:31,068  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-01 19:20:31,076  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-01 19:20:31,645  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-01 19:20:31,698  INFO 9  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-01 19:20:32,308  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-01 19:20:32,316  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-09-01 19:20:32,956  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-01 19:20:32,996  INFO 7  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-01 19:21:05,416  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 19:21:05,557  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 19:21:06,551  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-01 19:21:06,618  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-01 19:21:09,180  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-01 19:21:09,188  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-01 19:21:09,957  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-01 19:21:10,014  INFO 9  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-01 19:21:11,541  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-01 19:21:11,548  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-09-01 19:21:12,165  INFO 1  DataToolsLightLogger - Loading data for Keys
+2017-09-01 19:21:12,242  INFO 8  DataToolsLightLogger - Data for Keys was downloaded
+2017-09-01 19:25:57,256  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 19:25:57,370  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 19:25:58,366  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-01 19:25:58,428  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-09-01 19:25:59,341  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-01 19:25:59,348  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-01 19:33:33,958  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\slava)
+2017-09-01 19:33:34,063  INFO 6  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\slava)
+2017-09-01 19:33:38,295  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-01 19:33:38,309  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-09-01 19:33:39,215  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-01 19:33:39,363  INFO 8  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-01 19:49:33,942  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-01 19:49:34,053  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-01 19:49:35,445  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-01 19:49:35,564  INFO 7  DataToolsLightLogger - Data for Server was downloaded

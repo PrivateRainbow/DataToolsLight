@@ -1,0 +1,304 @@
+2017-07-20 18:22:15,753  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:22:15,776  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:22:15,784  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:22:15,792  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:22:16,061  ERROR 1  DbClientLogger - searchContext are not in valid state!
+System.ArgumentException: searchContext are not in valid state!
+   at DbClient.SearchDataDbClient.GetParsedSearchConfig(NodeSearchContext searchContext) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 56
+   at DbClient.SearchDataDbClient..ctor(NodeSearchContext searchContext) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 40
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 34
+2017-07-20 18:22:37,418  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:22:37,460  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:22:37,563  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:22:37,658  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:22:37,747  ERROR 1  DbClientLogger - searchContext are not in valid state!
+System.ArgumentException: searchContext are not in valid state!
+   at DbClient.SearchDataDbClient.GetParsedSearchConfig(NodeSearchContext searchContext) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 56
+   at DbClient.SearchDataDbClient..ctor(NodeSearchContext searchContext) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 40
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 34
+2017-07-20 18:23:14,777  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:23:14,799  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:23:14,821  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:23:14,837  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:24:18,163  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:24:18,185  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:24:18,202  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:24:18,242  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:24:42,823  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:24:42,859  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:24:42,871  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:24:42,890  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:24:46,040  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:24:46,064  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:24:47,408  ERROR 1  DbClientLogger - Search
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loader.Services.Schema.DbSchemaService.MakeNodeCollection(String nodeName, DbDataReader dataReader) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 282
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 134
+2017-07-20 18:24:47,430  ERROR 1  DbClientLogger - Search
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loader.Services.Schema.DbSchemaService.MakeNodeCollection(String nodeName, DbDataReader dataReader) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 282
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 141
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 99
+2017-07-20 18:24:47,492  ERROR 1  DbClientLogger - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loader.Services.Schema.DbSchemaService.MakeNodeCollection(String nodeName, DbDataReader dataReader) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 282
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 141
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 123
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 35
+2017-07-20 18:25:04,804  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:25:04,833  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:25:04,869  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:25:04,884  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:25:19,271  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:25:20,160  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:25:20,308  ERROR 1  DbClientLogger - Search
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Loader.Services.Schema.DbSchemaService.MakeNodeCollection(String nodeName, DbDataReader dataReader) in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 282
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 134
+2017-07-20 18:25:31,961  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:25:31,999  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:25:32,041  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:25:32,062  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:25:34,953  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:25:34,970  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:26:42,819  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:26:42,876  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:26:42,890  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:26:42,926  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:26:43,280  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:26:43,334  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:27:28,323  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:27:28,364  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:27:28,378  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:27:28,389  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:27:28,532  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:27:28,544  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:28:46,947  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:28:46,971  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:28:46,985  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:28:47,021  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:28:47,125  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:28:47,147  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:30:25,918  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:30:25,948  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:30:25,959  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:30:25,969  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:30:26,018  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:30:26,036  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:30:31,026  ERROR 1  DbClientLogger - Search
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 134
+2017-07-20 18:30:31,050  ERROR 1  DbClientLogger - Search
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 141
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 99
+2017-07-20 18:30:31,062  ERROR 1  DbClientLogger - The given key was not present in the dictionary.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 141
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 123
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 35
+2017-07-20 18:32:41,178  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:32:41,210  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:32:41,231  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:32:41,245  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:32:41,490  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:32:41,550  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:32:44,747  ERROR 1  DbClientLogger - Search
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 134
+2017-07-20 18:32:44,782  ERROR 1  DbClientLogger - Search
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 141
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 99
+2017-07-20 18:32:44,798  ERROR 1  DbClientLogger - The given key was not present in the dictionary.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Loader.Services.Schema.DbSchemaService.MakeTableNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 99
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 141
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 123
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 35
+2017-07-20 18:33:05,893  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:33:05,930  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:33:05,975  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:33:05,992  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:33:06,376  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:33:06,424  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:33:47,149  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:33:47,213  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:33:47,236  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:33:47,249  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:33:47,372  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:33:47,390  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:35:24,932  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:35:24,976  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:35:25,050  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:35:25,065  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:35:26,066  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:35:26,077  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:36:33,368  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:36:33,410  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:36:33,443  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:36:33,491  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:36:34,073  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:36:34,105  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:36:43,894  ERROR 1  DbClientLogger - Search
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Loader.Services.Schema.DbSchemaService.MakeViewNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 124
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 134
+2017-07-20 18:36:43,914  ERROR 1  DbClientLogger - Search
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Loader.Services.Schema.DbSchemaService.MakeViewNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 124
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 141
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 99
+2017-07-20 18:36:43,927  ERROR 1  DbClientLogger - The given key was not present in the dictionary.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Loader.Services.Schema.DbSchemaService.MakeViewNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 124
+   at Loader.Services.Schema.DbSchemaService.MakeFromDbSchema() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Services\Schema\DbSchemaService.cs:line 71
+   at DbClient.SearchDataDbClient.InitializeNode() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 141
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 123
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 35
+2017-07-20 18:38:27,733  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:38:27,754  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:38:27,765  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:38:27,775  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:38:27,863  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:38:27,880  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:39:44,080  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-20 18:40:02,921  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-20 18:40:02,944  INFO 1  DbClientLogger - FindNode  Found
+2017-07-20 18:40:06,674  INFO 1  DbClientLogger - SerializeNodeToConsole started to serialize node to Console.Out
+2017-07-20 18:40:08,648  INFO 1  DbClientLogger - SerializeNodeToConsole finished serialization node to Console.Out
+2017-07-20 18:40:10,404  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file ()!
+2017-07-20 18:40:10,441  ERROR 1  DbClientLogger - Search
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+   at System.IO.File.CreateText(String path)
+   at DbClient.SearchDataDbClient.SerializeNodeToFile() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 167
+2017-07-20 18:40:45,841  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:40:45,858  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:40:45,866  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:40:45,876  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:40:45,917  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:40:45,926  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:41:01,565  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-20 18:41:01,582  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-20 18:41:01,595  INFO 1  DbClientLogger - FindNode  Found
+2017-07-20 18:41:01,606  INFO 1  DbClientLogger - SerializeNodeToConsole started to serialize node to Console.Out
+2017-07-20 18:41:03,333  INFO 1  DbClientLogger - SerializeNodeToConsole finished serialization node to Console.Out
+2017-07-20 18:41:03,343  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file ()!
+2017-07-20 18:41:03,359  ERROR 1  DbClientLogger - Search
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+   at System.IO.File.CreateText(String path)
+   at DbClient.SearchDataDbClient.SerializeNodeToFile() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 167
+2017-07-20 18:41:03,377  ERROR 1  DbClientLogger - Search
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+   at System.IO.File.CreateText(String path)
+   at DbClient.SearchDataDbClient.SerializeNodeToFile() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 178
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 112
+2017-07-20 18:41:03,391  ERROR 1  DbClientLogger - Value cannot be null.
+Parameter name: path
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+   at System.IO.File.CreateText(String path)
+   at DbClient.SearchDataDbClient.SerializeNodeToFile() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 178
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 123
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 35
+2017-07-20 18:44:53,489  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:44:53,515  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:44:53,554  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:44:53,564  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:44:53,966  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:44:54,006  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:44:54,748  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-20 18:44:54,759  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-20 18:44:54,784  INFO 1  DbClientLogger - FindNode  Found
+2017-07-20 18:44:54,800  INFO 1  DbClientLogger - SerializeNodeToConsole started to serialize node to Console.Out
+2017-07-20 18:44:57,069  INFO 1  DbClientLogger - SerializeNodeToConsole finished serialization node to Console.Out
+2017-07-20 18:44:57,082  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file ()!
+2017-07-20 18:44:57,099  ERROR 1  DbClientLogger - Search
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+   at System.IO.File.CreateText(String path)
+   at DbClient.SearchDataDbClient.SerializeNodeToFile() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 167
+2017-07-20 18:44:57,119  ERROR 1  DbClientLogger - Search
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+   at System.IO.File.CreateText(String path)
+   at DbClient.SearchDataDbClient.SerializeNodeToFile() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 178
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 112
+2017-07-20 18:44:57,133  ERROR 1  DbClientLogger - Value cannot be null.
+Parameter name: path
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+   at System.IO.File.CreateText(String path)
+   at DbClient.SearchDataDbClient.SerializeNodeToFile() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 178
+   at DbClient.SearchDataDbClient.Search() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 123
+   at DbClient.Program.ExecuteWithDbArgs() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\Program.cs:line 35
+2017-07-20 18:46:37,448  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:46:37,469  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:46:37,485  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:46:37,498  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:46:37,561  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:46:41,835  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:47:03,564  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-20 18:47:11,497  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-20 18:47:11,526  INFO 1  DbClientLogger - FindNode  Found
+2017-07-20 18:47:19,116  INFO 1  DbClientLogger - SerializeNodeToConsole started to serialize node to Console.Out
+2017-07-20 18:47:20,882  INFO 1  DbClientLogger - SerializeNodeToConsole finished serialization node to Console.Out
+2017-07-20 18:47:38,725  INFO 1  DbClientLogger - SerializeNodeToFile started to serialize node to output file ()!
+2017-07-20 18:47:38,758  ERROR 1  DbClientLogger - Search
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+   at System.IO.File.CreateText(String path)
+   at DbClient.SearchDataDbClient.SerializeNodeToFile() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DbClient\SearchDataDbClient.cs:line 167
+2017-07-20 18:47:59,550  INFO 1  DbClientLogger - Start execution
+2017-07-20 18:47:59,568  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 18:47:59,613  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 18:47:59,655  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 18:47:59,709  INFO 1  DbClientLogger - Search ran!
+2017-07-20 18:48:02,115  INFO 1  DbClientLogger - InitializeNode started!
+2017-07-20 18:48:02,318  INFO 1  DbClientLogger - InitializeNode has got node from Db!
+2017-07-20 18:48:02,330  INFO 1  DbClientLogger - FindNode started to find node!
+2017-07-20 18:48:02,347  INFO 1  DbClientLogger - FindNode  Found
+2017-07-20 18:48:02,360  INFO 1  DbClientLogger - SerializeNodeToConsole started to serialize node to Console.Out
+2017-07-20 18:48:04,235  INFO 1  DbClientLogger - SerializeNodeToConsole finished serialization node to Console.Out
+2017-07-20 18:48:04,244  INFO 1  DbClientLogger - WriteScriptToFile started to write sql for node!
+2017-07-20 18:48:07,681  INFO 1  DbClientLogger - WriteScriptToFile finished to write sql for node!
+2017-07-20 18:48:07,691  INFO 1  DbClientLogger - Search finished!
+2017-07-20 19:45:26,827  INFO 1  DbClientLogger - Start execution
+2017-07-20 19:45:26,858  INFO 1  DbClientLogger - Microsoft Windows NT 6.2.9200.0
+2017-07-20 19:45:26,895  INFO 1  DbClientLogger - WS-MYRONENKO
+2017-07-20 19:45:26,911  INFO 1  DbClientLogger - Myronenko.V
+2017-07-20 19:45:26,973  INFO 1  DbClientLogger - Search ran!
+2017-07-20 19:45:26,984  INFO 1  DbClientLogger - InitializeNode started!

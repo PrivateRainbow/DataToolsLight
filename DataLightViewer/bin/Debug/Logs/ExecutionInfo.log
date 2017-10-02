@@ -1,0 +1,166 @@
+2017-09-07 14:59:53,665  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 14:59:53,809  INFO 7  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 15:00:29,502  INFO 1  DataToolsLightLogger - Loading data for Parameters
+2017-09-07 15:00:30,052  INFO 7  DataToolsLightLogger - Data for Parameters was downloaded
+2017-09-07 15:00:31,420  INFO 1  DataToolsLightLogger - Loading data for View
+2017-09-07 15:00:31,430  INFO 7  DataToolsLightLogger - Data for View was downloaded
+2017-09-07 15:00:32,300  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-07 15:00:32,635  INFO 6  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-07 15:00:35,277  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-07 15:00:35,284  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-09-07 15:00:36,053  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-07 15:00:36,062  INFO 10  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-07 15:01:17,861  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-07 15:01:17,903  INFO 10  DataToolsLightLogger - Data for Table was downloaded
+2017-09-07 15:01:18,837  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-07 15:01:18,870  INFO 10  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-07 15:01:20,381  INFO 1  DataToolsLightLogger - Loading data for Keys
+2017-09-07 15:01:20,512  INFO 10  DataToolsLightLogger - Data for Keys was downloaded
+2017-09-07 15:13:57,025  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 15:13:57,130  INFO 7  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 15:14:09,517  INFO 1  DataToolsLightLogger - Searching node with Invoices name
+2017-09-07 15:14:09,534  INFO 1  DataToolsLightLogger - Node with such name (Invoices) was found!
+2017-09-07 15:14:28,412  INFO 1  DataToolsLightLogger - Searching node with ContactName name
+2017-09-07 15:14:28,425  INFO 1  DataToolsLightLogger - Node with such name (ContactName) was found!
+2017-09-07 15:15:28,038  INFO 1  DataToolsLightLogger - Loading data for Indexes
+2017-09-07 15:15:28,267  INFO 8  DataToolsLightLogger - Data for Indexes was downloaded
+2017-09-07 15:17:48,148  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-09-07 15:17:48,188  INFO 8  DataToolsLightLogger - Sql-script for Database was succesfully constructed!
+2017-09-07 15:23:44,494  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-09-07 15:38:09,989  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-07 15:38:10,181  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-07 15:38:11,374  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-07 15:38:11,658  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-09-07 15:38:25,724  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-07 15:38:25,732  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-07 15:38:27,188  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-07 15:38:27,344  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-07 15:38:28,738  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-07 15:38:28,745  INFO 6  DataToolsLightLogger - Data for Table was downloaded
+2017-09-07 15:38:29,812  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-07 15:38:29,914  INFO 6  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-07 15:39:22,325  INFO 1  DataToolsLightLogger - Searching node with Users name
+2017-09-07 15:39:22,353  INFO 1  DataToolsLightLogger - Node with such name (Users) was found!
+2017-09-07 15:39:28,411  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-07 15:39:28,429  INFO 9  DataToolsLightLogger - Data for Database was downloaded
+2017-09-07 15:39:29,331  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-07 15:39:29,524  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-07 15:39:30,524  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-07 15:39:30,532  INFO 9  DataToolsLightLogger - Data for Table was downloaded
+2017-09-07 15:39:31,412  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-07 15:39:31,443  INFO 7  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-07 15:39:38,398  INFO 1  DataToolsLightLogger - Building sql-script for Tables
+2017-09-07 15:39:38,413  INFO 7  DataToolsLightLogger - Sql-script for Tables was succesfully constructed!
+2017-09-07 15:40:12,140  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-07 15:40:12,151  INFO 9  DataToolsLightLogger - Data for Database was downloaded
+2017-09-07 15:40:12,924  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-07 15:40:13,351  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-07 15:40:14,876  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-07 15:40:14,884  INFO 9  DataToolsLightLogger - Data for Table was downloaded
+2017-09-07 15:40:16,548  INFO 1  DataToolsLightLogger - Loading data for Indexes
+2017-09-07 15:40:16,571  INFO 9  DataToolsLightLogger - Data for Indexes was downloaded
+2017-09-07 15:40:20,788  INFO 1  DataToolsLightLogger - Loading data for Constraints
+2017-09-07 15:40:20,828  INFO 9  DataToolsLightLogger - Data for Constraints was downloaded
+2017-09-07 15:40:22,085  INFO 1  DataToolsLightLogger - Loading data for Keys
+2017-09-07 15:40:22,155  INFO 7  DataToolsLightLogger - Data for Keys was downloaded
+2017-09-07 15:40:23,260  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-07 15:40:23,289  INFO 9  DataToolsLightLogger - Data for Columns was downloaded
+2017-09-07 16:03:52,764  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-07 16:03:52,955  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-07 16:03:54,428  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-07 16:03:54,890  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-07 16:05:04,235  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-07 16:05:04,417  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-07 16:05:05,508  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-07 16:05:05,900  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-07 16:05:07,081  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-07 16:05:07,089  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-07 16:21:48,229  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-07 16:21:48,418  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-07 16:21:49,933  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-07 16:21:50,172  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-07 16:22:00,329  INFO 6  DataToolsLightLogger - Saving the project file by folder path (C:\Users\myronenko.v\Desktop\tes)
+2017-09-07 16:22:00,519  INFO 9  DataToolsLightLogger - Project was save by path (C:\Users\myronenko.v\Desktop\tes)
+2017-09-07 16:22:30,828  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\tes)
+2017-09-07 16:22:30,927  INFO 6  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\tes)
+2017-09-07 16:22:33,646  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-07 16:22:33,693  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-07 16:22:39,494  INFO 7  DataToolsLightLogger - Saving the project file by folder path (C:\Users\myronenko.v\Desktop\tes)
+2017-09-07 16:22:39,562  INFO 6  DataToolsLightLogger - Project was save by path (C:\Users\myronenko.v\Desktop\tes)
+2017-09-07 16:22:51,500  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\tes)
+2017-09-07 16:47:20,620  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 16:47:20,784  INFO 6  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 16:47:30,725  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\tes)
+2017-09-07 16:47:30,838  INFO 6  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\tes)
+2017-09-07 16:50:09,355  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-07 16:50:09,576  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-07 16:50:10,904  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-07 16:50:11,320  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-09-07 17:05:44,322  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-07 17:05:44,471  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-07 17:05:45,363  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-07 17:05:45,680  INFO 6  DataToolsLightLogger - Data for Server was downloaded
+2017-09-07 17:05:52,089  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-07 17:05:52,098  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-07 17:05:52,834  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-07 17:05:53,158  INFO 6  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-07 17:05:54,905  INFO 1  DataToolsLightLogger - Loading data for Views
+2017-09-07 17:05:54,992  INFO 6  DataToolsLightLogger - Data for Views was downloaded
+2017-09-07 17:05:56,353  INFO 1  DataToolsLightLogger - Loading data for Procedures
+2017-09-07 17:05:56,408  INFO 9  DataToolsLightLogger - Data for Procedures was downloaded
+2017-09-07 17:05:59,888  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-09-07 17:05:59,898  INFO 7  DataToolsLightLogger - Sql-script for Database was succesfully constructed!
+2017-09-07 17:21:07,577  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 17:21:07,895  INFO 6  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 17:21:14,821  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-09-07 17:21:14,979  INFO 7  DataToolsLightLogger - Sql-script for Database was succesfully constructed!
+2017-09-07 17:21:31,419  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-09-07 17:25:09,492  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 17:25:09,643  INFO 7  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 17:25:20,718  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-09-07 17:25:20,810  INFO 6  DataToolsLightLogger - Sql-script for Database was succesfully constructed!
+2017-09-07 17:26:04,303  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 17:26:04,507  INFO 6  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 17:26:08,629  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-09-07 17:26:08,652  INFO 7  DataToolsLightLogger - Sql-script for Database was succesfully constructed!
+2017-09-07 17:26:34,080  INFO 1  DataToolsLightLogger - Building sql-script for Table
+2017-09-07 17:26:34,201  INFO 7  DataToolsLightLogger - Sql-script for Table was succesfully constructed!
+2017-09-07 17:28:26,831  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 17:28:26,934  INFO 6  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 17:28:29,756  INFO 1  DataToolsLightLogger - Building sql-script for Server
+2017-09-07 17:28:29,766  INFO 7  DataToolsLightLogger - Sql-script for Server was succesfully constructed!
+2017-09-07 17:28:45,475  INFO 1  DataToolsLightLogger - Building sql-script for Database
+2017-09-07 17:28:45,491  INFO 10  DataToolsLightLogger - Sql-script for Database was succesfully constructed!
+2017-09-07 17:28:49,419  INFO 1  DataToolsLightLogger - Building sql-script for Server
+2017-09-07 17:28:49,447  INFO 7  DataToolsLightLogger - Sql-script for Server was succesfully constructed!
+2017-09-07 17:28:52,635  INFO 1  DataToolsLightLogger - Building sql-script for Tables
+2017-09-07 17:28:52,656  INFO 6  DataToolsLightLogger - Sql-script for Tables was succesfully constructed!
+2017-09-07 17:37:22,867  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 17:37:23,010  INFO 7  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\schema)
+2017-09-07 18:14:17,572  INFO 1  DataToolsLightLogger - ConnectToServerAsync has started! 
+2017-09-07 18:14:17,722  INFO 1  DataToolsLightLogger - ConnectToServerAsync : connection is established!
+2017-09-07 18:14:19,505  INFO 1  DataToolsLightLogger - Loading data for Server
+2017-09-07 18:14:19,564  INFO 7  DataToolsLightLogger - Data for Server was downloaded
+2017-09-07 18:14:49,326  INFO 9  DataToolsLightLogger - Saving the project file by folder path (C:\Users\myronenko.v\Desktop\enctest)
+2017-09-07 18:15:13,789  INFO 11  DataToolsLightLogger - Project was save by path (C:\Users\myronenko.v\Desktop\enctest)
+2017-09-07 18:15:49,442  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\enctest)
+2017-09-07 18:17:01,034  ERROR 7  DataToolsLightLogger - Error on opening the project.
+System.InvalidOperationException: The 'database_id' attribute is invalid - The value '128' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:byte' - The string '128' is not a valid SByte value.
+   at Loader.Scanners.DatabaseXmlScanner.Scan() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\Loader\Scanners\DatabaseXmlScanner.cs:line 89
+   at DataLightViewer.Memento.AppStateService.<>c__DisplayClass14_0.<ReadProjectFileAsync>b__0() in C:\Users\myronenko.v\Documents\Visual Studio 2017\Projects\DataToolsLight\DataLightViewer\Memento\AppStateService.cs:line 147
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+2017-09-07 18:20:01,350  INFO 6  DataToolsLightLogger - Opening the project file by path (C:\Users\myronenko.v\Desktop\enctest)
+2017-09-07 18:20:01,587  INFO 7  DataToolsLightLogger - Project was opened by path (C:\Users\myronenko.v\Desktop\enctest)
+2017-09-07 18:20:08,249  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-07 18:20:08,271  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-07 18:20:09,278  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-07 18:20:09,590  INFO 7  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-07 18:20:14,871  INFO 1  DataToolsLightLogger - Loading data for Database
+2017-09-07 18:20:14,917  INFO 6  DataToolsLightLogger - Data for Database was downloaded
+2017-09-07 18:20:15,751  INFO 1  DataToolsLightLogger - Loading data for Tables
+2017-09-07 18:20:15,951  INFO 10  DataToolsLightLogger - Data for Tables was downloaded
+2017-09-07 18:20:17,161  INFO 1  DataToolsLightLogger - Loading data for Table
+2017-09-07 18:20:17,171  INFO 7  DataToolsLightLogger - Data for Table was downloaded
+2017-09-07 18:20:17,991  INFO 1  DataToolsLightLogger - Loading data for Columns
+2017-09-07 18:20:18,079  INFO 10  DataToolsLightLogger - Data for Columns was downloaded
